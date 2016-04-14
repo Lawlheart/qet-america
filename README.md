@@ -1,5 +1,5 @@
 # QET America
-### code by Kenneth Black and Juan Martinez in cooperation with FreeCodeCamp
+##### code by Kenneth Black and Juan Martinez in cooperation with FreeCodeCamp
 
 Public site for QET America, a multiple language website (English, Spanish) featuring photo galleries that accepts donations.
 Built using KeystoneJS
