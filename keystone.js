@@ -1,6 +1,6 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
-// require('dotenv').load();
+require('dotenv').config({ silent: true });
 
 // Require keystone
 var keystone = require('keystone');
@@ -27,11 +27,17 @@ keystone.init({
 	'custom engine': swig.renderFile,
 	
 	'emails': 'templates/emails',
+
+	'mongo': process.env.MONGODB_URI || 'mongodb://localhost/qet-america',
 	
 	'auto update': true,
 	'session': true,
+	'session store': 'mongo',
 	'auth': true,
-	'user model': 'User'
+	'user model': 'User',
+	'cookie secret': process.env.COOKIE_SECRET || 'QET23095jwif',
+	'mandrill api key': process.env.MANDRILL_KEY,
+	'cloudinary url' : process.env.CLOUDINARY_URL
 
 });
 
@@ -45,7 +51,7 @@ keystone.import('models');
 
 keystone.set('locals', {
 	_: require('underscore'),
-	env: process.env,
+	env: keystone.get('env'),
 	utils: keystone.utils,
 	editable: keystone.content.editable
 });
