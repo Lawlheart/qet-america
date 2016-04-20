@@ -6,6 +6,8 @@
     "async": "^1.5.0",
     "connect-mongo": "^1.1.0",
     "dotenv": "^1.1.0",
+    "i18next": "^2.5.1",
+    "i18next-node-fs-backend": "^0.1.2",
     "keystone": "https://github.com/keystonejs/keystone.git",
     "newrelic": "^1.26.2",
     "node-sass": "^3.3.2",
