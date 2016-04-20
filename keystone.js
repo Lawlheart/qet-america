@@ -22,19 +22,19 @@ keystone.init({
 
 	'name': 'QET America',
 	'brand': 'QET America',
-	
+
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'swig',
-	
+
 	'custom engine': swig.renderFile,
-	
+
 	'emails': 'templates/emails',
 
 	'mongo': process.env.MONGODB_URI || 'mongodb://localhost/qet-america',
-	
+
 	'auto update': true,
 	'session': true,
 	'session store': 'mongo',
@@ -44,7 +44,7 @@ keystone.init({
 	'mandrill api key': process.env.MANDRILL_KEY,
 	'cloudinary url' : process.env.CLOUDINARY_URL,
 	'language options': {
-		'supported languages': ['en-US', 'es'],
+		'supported languages': ['en', 'es'],
 		'disable': false
 	}
 

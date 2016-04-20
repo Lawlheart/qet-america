@@ -61,6 +61,11 @@
 								</li>
 							{%- endfor %}
 						</ul>
+						{# language selector. This should be changed for something better #}
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="/languages/es">Español</a></li>
+							<li><a href="/languages/en">English</a></li>
+						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							{% if user -%}
 								{%- if user.canAccessKeystone -%}
