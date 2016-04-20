@@ -42,7 +42,11 @@ keystone.init({
 	'user model': 'User',
 	'cookie secret': process.env.COOKIE_SECRET || 'QET23095jwif',
 	'mandrill api key': process.env.MANDRILL_KEY,
-	'cloudinary url' : process.env.CLOUDINARY_URL
+	'cloudinary url' : process.env.CLOUDINARY_URL,
+	'language options': {
+		'supported languages': ['en-US', 'es'],
+		'disable': false
+	}
 
 });
 
@@ -90,13 +94,13 @@ keystone.set('email locals', {
 // Be sure to update this rule to include your site's actual domain, and add
 // other rules your email templates require.
 
-keystone.set('email rules', [{
-	find: '/images/',
-	replace: (process.env.NODE_ENV == 'production') ? 'http://www.your-server.com/images/' : 'http://localhost:3000/images/'
-}, {
-	find: '/keystone/',
-	replace: (process.env.NODE_ENV == 'production') ? 'http://www.your-server.com/keystone/' : 'http://localhost:3000/keystone/'
-}]);
+// keystone.set('email rules', [{
+// 	find: '/images/',
+// 	replace: (process.env.NODE_ENV == 'production') ? 'http://www.your-server.com/images/' : 'http://localhost:3000/images/'
+// }, {
+// 	find: '/keystone/',
+// 	replace: (process.env.NODE_ENV == 'production') ? 'http://www.your-server.com/keystone/' : 'http://localhost:3000/keystone/'
+// }]);
 
 // Load your project's email test routes
 
