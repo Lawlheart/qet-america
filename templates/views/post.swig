@@ -18,6 +18,10 @@
 							{% if data.post.publishedDate %}
 								on {{ data.post._.publishedDate.format("MMMM Do, YYYY") }}
 							{% endif %}
+							{{data.post.docs.exists}}
+							{% if data.post.docs.exists %}
+								<p>Documents: <a href="{{ data.post.docs.url }}" target="_blank">{{data.post.docs.filename}}</a></p>
+							{% endif %}
 							{% if data.post.categories and data.post.categories.length %}
 								in
 								{% for cat in data.post.categories %}

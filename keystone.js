@@ -46,8 +46,14 @@ keystone.init({
 
 });
 
-// Load your project's Models
+// Set up Amazon S3
+keystone.set('s3 config', { 
+	bucket: process.env.S3_BUCKET_NAME, 
+	key: process.env.AWS_ACCESS_KEY_ID, 
+	secret: process.env.AWS_SECRET_ACCESS_KEY 
+});
 
+// Load your project's Models
 keystone.import('models');
 
 // Setup common locals for your templates. The following are required for the
@@ -62,7 +68,6 @@ keystone.set('locals', {
 });
 
 // Load your project's Routes
-
 keystone.set('routes', require('./routes'));
 
 

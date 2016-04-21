@@ -17,6 +17,11 @@ Post.add({
 	author: { type: Types.Relationship, ref: 'User', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
 	image: { type: Types.CloudinaryImage },
+	docs: { type: Types.S3File, label: 'Documents'},
+	language: { type: Types.Select, options: [
+			{ value: 1, label: 'English' }, 
+			{ value: 2, label: 'Español' }
+		], default: 1 },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 }
