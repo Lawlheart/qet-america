@@ -60,6 +60,7 @@
 									<a href="{{ link.href }}">{{ link.label }}</a>
 								</li>
 							{%- endfor %}
+							<li><a href="/documents">Documents</a></li>
 						</ul>
 						{# language selector. This should be changed for something better #}
 						<ul class="nav navbar-nav navbar-right">
