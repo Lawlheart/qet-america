@@ -5821,8 +5821,33 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-#header {
-  margin-top: 30px; }
+body {
+  color: #fff;
+  background-color: #282c34; }
+
+a {
+  color: #3eb4b4; }
+  a:hover {
+    color: #5272b8;
+    text-decoration: none; }
+
+#header .navbar.navbar-inverse {
+  background-color: #002B00;
+  border-color: #001400; }
+  #header .navbar.navbar-inverse .navbar-brand {
+    color: #fff; }
+  #header .navbar.navbar-inverse .navbar-nav > li > a {
+    color: #b7b7b7; }
+  #header .navbar.navbar-inverse .navbar-nav > li.active > a,
+  #header .navbar.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: #014701; }
+
+#body {
+  margin-top: 100px; }
+
+.jumbotron {
+  background-color: #002B00; }
 
 #footer {
   margin-top: 30px;

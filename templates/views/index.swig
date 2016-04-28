@@ -3,7 +3,6 @@
 {% block content %}
 	<div class="container">
 		<div class="jumbotron">
-			<img src="/images/logo.svg" width="160">
 			<h1>{{ t('Welcome') }}</h1>
 			<p>{{ t('This is your new') }} <a href="http://keystonejs.com" target="_blank">KeystoneJS</a> website.</p>
 			<p>
