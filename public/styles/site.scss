@@ -5,6 +5,10 @@
 
 @import "bootstrap/bootstrap";
 
+// Importing Bourbon
+
+@import "bourbon/bourbon";
+
 // The easiest way to customise Bootstrap variables while
 // being able to easily override the source files with new
 // versions is to override the ones you want in another file.
@@ -20,3 +24,4 @@
 
 // Add your own site style includes here
 @import "site/layout";
+@import "site/gallery";

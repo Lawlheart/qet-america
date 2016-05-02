@@ -12,6 +12,7 @@
 
 		{# Customise the stylesheet for your site by editing /public/styles/site.sass #}
 		<link href="/styles/site.css" rel="stylesheet">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css">
 
 		{# This file provides the default styling for the KeystoneJS Content Editor #}
 		{%- if user and user.canAccessKeystone -%}
@@ -62,20 +63,29 @@
 							{%- endfor %}
 							<li><a href="/documents">Documents</a></li>
 						</ul>
+						<ul class="nav navbar-nav navbar-right">
+						</ul>
 						{# language selector. This should be changed for something better #}
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="/languages/es">Español</a></li>
-							<li><a href="/languages/en">English</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							{% if user -%}
-								{%- if user.canAccessKeystone -%}
-									<li><a href="/keystone">Open Keystone</a></li>
-								{%- endif -%}
-								<li><a href="/keystone/signout">Sign Out</a></li>
-							{%- else -%}
-								<li><a href="/keystone/signin">Sign In</a></li>
-							{%- endif %}
+							<li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="mobile">Settings </span><i class="fa fa-cog"></i></a>
+			          <ul class="dropdown-menu">
+
+									{% if user -%}
+				            <li class="nav-category">Account</li>
+										{%- if user.canAccessKeystone -%}
+											<li><a href="/keystone">Open Keystone</a></li>
+										{%- endif -%}
+										<li><a href="/keystone/signout">Sign Out</a></li>
+									{%- else -%}
+										<li><a href="/keystone/signin">Sign In</a></li>
+									{%- endif %}
+			            <li class="nav-category">Language</li>
+									<li><a href="/languages/es">Español</a></li>
+									<li><a href="/languages/en">English</a></li>
+			          </ul>
+			        </li>
+
 						</ul>
 					</div>
 				</div>

@@ -57,6 +57,13 @@ keystone.set('s3 config', {
 	secret: process.env.AWS_SECRET_ACCESS_KEY 
 });
 
+// Set up Cloudinary Config
+keystone.set('cloudinary config', { 
+	cloud_name: process.env.CLOUDINARY_NAME, 
+	api_key: process.env.CLOUDINARY_KEY, 
+	api_secret: process.env.CLOUDINARY_SECRET 
+});
+
 // Load your project's Models
 keystone.import('models');
 

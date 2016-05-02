@@ -1,0 +1,22 @@
+.gallery-date {
+  @include clearfix;
+  @media screen and (max-width: 480px) {
+    float: none !important;
+    display: block;
+    text-align: left;
+
+  }
+}
+
+.gallery-images {
+  @include clearfix;
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-content(stretch);
+}
+
+.gallery-image {
+  margin: 20px;
+}
