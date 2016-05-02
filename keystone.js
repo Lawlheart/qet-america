@@ -57,6 +57,8 @@ keystone.set('s3 config', {
 	secret: process.env.AWS_SECRET_ACCESS_KEY 
 });
 
+keystone.set('embedly api key', '83474de7d06b4560963bb17f6619dd0d');
+
 // Load your project's Models
 keystone.import('models');
 
