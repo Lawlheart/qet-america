@@ -27,6 +27,12 @@
 			<link href="/keystone/styles/content/editor.min.css" rel="stylesheet">
 		{%- endif -%}
 
+		{# This loads the sumome script. The site-id was taken from the wordpress site #}
+		<script src="//load.sumome.com/"
+			data-sumo-site-id="4c4866517f6475102e686bb1bec3b971f9d4a81c62befe8cde3fb1a7b1cc7ac7"
+			async="async">
+		</script>
+
 		{# HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
 		   Safely remove this block if you are not targeting IE8 #}
 		<!--[if lt IE 9]>
