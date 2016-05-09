@@ -6,10 +6,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		{% block meta %}{% endblock %}
-		<meta name="twitter:domain" content="qet-america.herokuapp.com">
 		<title>{{ title|default("QET America") }}</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+
+		{% block meta %}{% endblock %}
+		<meta name="twitter:domain" content="qet-america.herokuapp.com">
+		<meta name="fb:app_id" content="185694088491162">
 
 		{# Customise the stylesheet for your site by editing /public/styles/site.sass #}
 		<link href="/styles/site.css" rel="stylesheet">

@@ -68,34 +68,26 @@
 {% endblock %}
 
 {% block meta %}
-	{# Facebook Metas #}
-	<meta property="og:url"           content="http://qet-america.herokuapp.com/{{ data.post.slug }}" />
-	<meta property="og:type"          content="website" />
-	<meta property="og:title"         content="QET America | {{ data.post.title }}" />
-	<meta property="og:description"   content="Your description" />
-	{% if data.post.video.exists %}
-		<meta property="og:image" content="{{ data.post.video.thumbnailUrl }}" />
-	{% elseif data.post.image.exists %}
-		<meta property="og:image" content="{{ data.post._.image.fit(750,450) }}" />
-	{% else %}
-		<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.jpg" />
-	{% endif %}
-
-	{# Twitter Metas #}
-	{# <meta name="twitter:site" content="@site_username"> #}
-	{# <meta name="twitter:creator" content="@creator_username"> #}
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="QET America | {{ data.post.title }}">
+	<meta property="og:url" content="http://qet-america.herokuapp.com/blog/post/{{ data.post.slug }}" />
+	<meta property="og:description"   content="{{ data.post.content.brief | striptags | replace('^(.{200,200})(.*)', '$1') }}" />
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="QET America | {{data.post.title}}">
-
-	{# replace is a hack to limit character count #}
 	<meta name="twitter:description" content="{{ data.post.content.brief | striptags | replace('^(.{200,200})(.*)', '$1') }}"> 
+	{# <meta name="twitter:site" content="@site_username"> #}
+	{# <meta name="twitter:creator" content="@creator_username"> #}
+
 
 	{% if data.post.video.exists %}
+		<meta property="og:image" content="{{ data.post.video.thumbnailUrl }}" />
 		<meta name="twitter:image:src" content="{{ data.post.video.thumbnailUrl }}">
 	{% elseif data.post.image.exists %}
+		<meta property="og:image" content="{{ data.post._.image.fit(750,450) }}" />
 		<meta name="twitter:image:src" content="{{ data.post._.image.fit(750,450) }}">
 	{% else %}
+		<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.jpg" />
 		<meta name="twitter:image:src" content="http://qet-america.herokuapp.com/images/default.jpg">
 	{% endif %}
 	
