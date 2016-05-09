@@ -5840,7 +5840,7 @@ a {
 
 #header .navbar.navbar-inverse {
   background-color: #002B00;
-  border-color: #001200; }
+  border-color: #002100; }
   #header .navbar.navbar-inverse .navbar-brand {
     color: #fff; }
   #header .navbar.navbar-inverse .navbar-nav, #header .navbar.navbar-inverse .dropdown-menu {
@@ -5944,18 +5944,74 @@ a {
 .video-thumb {
   max-height: 160px;
   max-width: 160px; }
+  @media screen and (max-width: 768px) {
+    .video-thumb {
+      margin: 0 0 16px 16px; } }
+
+.post {
+  position: relative; }
+  @media screen and (min-width: 993px) {
+    .post .lead {
+      position: absolute;
+      top: 0;
+      right: 0; } }
+
+.category-list {
+  margin-top: 20px; }
+  .category-list .list-group-item {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: #002B00;
+    border-color: #002100; }
+    .category-list .list-group-item:hover, .category-list .list-group-item.active {
+      color: #fff;
+      background-color: #014701; }
 
 article header {
   position: relative; }
   @media screen and (min-width: 768px) {
     article header h5 {
+      margin: 0;
       position: absolute;
       top: 0;
       right: 0; } }
 
-article .embedly-embed {
-  margin: 20px auto; }
+article .share {
+  position: absolute;
+  top: 20px;
+  right: 0; }
+  article .share .twitter-share-button, article .share .facebook-share-button {
+    float: left;
+    margin: 0 8px; }
+  @media screen and (max-width: 768px) {
+    article .share {
+      position: relative;
+      display: inline-block;
+      top: 0; } }
+
+article .img-responsive {
+  margin: 10px auto 20px; }
+  @media screen and (min-width: 993px) {
+    article .img-responsive {
+      max-width: 460px;
+      float: right;
+      margin: 0 0 10px 10px; } }
+  @media screen and (min-width: 1200px) {
+    article .img-responsive {
+      max-width: 780px; } }
 
 article .img-thumb {
   max-width: 260px;
   margin: auto; }
+
+article .video-frame {
+  position: relative;
+  padding-bottom: 50%;
+  height: 0;
+  margin: 10px auto;
+  overflow: hidden; }
+  article .video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }

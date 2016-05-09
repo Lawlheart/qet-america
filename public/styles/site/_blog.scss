@@ -1,4 +1,31 @@
 .video-thumb {
   max-height: 160px;
   max-width: 160px;
+  @media screen and (max-width: $screen-small) {
+    margin: 0 0 16px 16px;
+  }
+}
+
+.post {
+  position: relative;
+  @media screen and (min-width: $screen-medium) {
+    .lead {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.category-list {
+  margin-top: 20px;
+  .list-group-item {
+    color: transparentize(#fff, 0.3);
+    background-color: $dark-green;
+    border-color: darken($dark-green, 2%);
+    &:hover, &.active {
+      color: #fff;
+      background-color: $green;
+    }
+  }
 }

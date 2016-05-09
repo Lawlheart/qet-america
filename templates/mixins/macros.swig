@@ -1,20 +1,28 @@
-{% macro postInfo(data) %}
+{% macro postInfo(post) %}
 {# Posted (on DATE) (in CATEGORIES) (by AUTHOR) #}
   Posted
-  {% if data.post.publishedDate %}
-    on {{ data.post._.publishedDate.format("MMMM Do, YYYY") }}
+  {% if post.publishedDate %}
+    on {{ post._.publishedDate.format("MMMM Do, YYYY") }}
   {% endif %}
 
-  {% if data.post.categories and data.post.categories.length %}
+  {% if post.categories and post.categories.length %}
     in
-    {% for cat in data.post.categories %}
+    {% for cat in post.categories %}
       <a href="/blog/{{ cat.key }}">{{ cat.name }}</a>
-      {% if loop.index < data.post.categories.length - 1 %}, {% endif %}
+      {% if loop.index < post.categories.length - 1 %}, {% endif %}
     {% endfor %}
   {% endif %}
 
   {# Author, if it exists #}
-  {% if data.post.author %}
-    by {{ data.post.author.name.first }}
+  {% if post.author %}
+    by {{ post.author.name.first }}
   {% endif %}
+{% endmacro %}
+
+{% macro facebook(slug) %}
+  <div class="fb-share-button" data-href="http://qet-america.herokuapp.com/{{ slug }}" data-layout="button" data-mobile-iframe="true"></div>
+{% endmacro %}
+
+{% macro twitter(slug, title) %}
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://qet-america.herokuapp.com/{{ slug }}" data-text="{{ title }}" data-hashtags="QETAmerica">Tweet</a>
 {% endmacro %}

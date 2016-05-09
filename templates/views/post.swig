@@ -3,6 +3,8 @@
 {% import "../mixins/macros.swig" as Macros %}
 
 {% block content %}
+	{# For testing purposes #}
+	{# <pre>{{ data.post | json }}</pre> #}
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -16,23 +18,29 @@
 					{% else %}
 						<header>
 							<h1>{{ data.post.title }}</h1>
-							<h5>{{ Macros.postInfo(data) }}</h5>
+							<h5>{{ Macros.postInfo(data.post) }}</h5>
+							<div class="share">
+								{{ Macros.facebook(data.post.slug) }}
+								{{ Macros.twitter(data.post.slug, data.post.title) }}
+							</div>
 						</header>
 
 						<div class="post">
 
 							{# Video, if it exists #}
 							{% if data.post.video.exists %}
-								{{ data.post.video.html | safe }}
+								<div class="video-frame">
+									{{ data.post.video.html | safe }}
+								</div>
 							{% endif %}
 
 							{# Image, if it exists #}
 							{% if data.post.image.exists %}
 								<div class="image-wrap">
 									{% if data.post.video.exists %}
-										<img src="{{ data.post._.image.fit(750,450) }}" class="img-responsive">
+										<img src="{{ data.post._.image.fit(325,225) }}" class="img-thumb">
 									{% else %}
-										<img src="{{ data.post._.image.fit(150,90) }}" class="img-thumb">
+										<img src="{{ data.post._.image.fit(750,450) }}" class="img-responsive">
 									{% endif %}
 								</div>
 							{% endif %}
@@ -51,4 +59,44 @@
 			</div>
 		</div>
 	</div>
+{% endblock %}
+
+{% block js %}
+	{# Share Buttons #}
+	<div id="fb-root"></div>
+	<script src="/js/app/share.js"></script>
+{% endblock %}
+
+{% block meta %}
+	{# Facebook Metas #}
+	<meta property="og:url"           content="http://qet-america.herokuapp.com/{{ data.post.slug }}" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="QET America | {{ data.post.title }}" />
+	<meta property="og:description"   content="Your description" />
+	{% if data.post.video.exists %}
+		<meta property="og:image" content="{{ data.post.video.thumbnailUrl }}" />
+	{% elseif data.post.image.exists %}
+		<meta property="og:image" content="{{ data.post._.image.fit(750,450) }}" />
+	{% else %}
+		<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.jpg" />
+	{% endif %}
+
+	{# Twitter Metas #}
+	{# <meta name="twitter:site" content="@site_username"> #}
+	{# <meta name="twitter:creator" content="@creator_username"> #}
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="QET America | {{data.post.title}}">
+
+	{# replace is a hack to limit character count #}
+	<meta name="twitter:description" content="{{ data.post.content.brief | striptags | replace('^(.{200,200})(.*)', '$1') }}"> 
+
+	{% if data.post.video.exists %}
+		<meta name="twitter:image:src" content="{{ data.post.video.thumbnailUrl }}">
+	{% elseif data.post.image.exists %}
+		<meta name="twitter:image:src" content="{{ data.post._.image.fit(750,450) }}">
+	{% else %}
+		<meta name="twitter:image:src" content="http://qet-america.herokuapp.com/images/default.jpg">
+	{% endif %}
+	
 {% endblock %}

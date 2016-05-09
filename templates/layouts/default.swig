@@ -6,7 +6,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+		{% block meta %}{% endblock %}
+		<meta name="twitter:domain" content="qet-america.herokuapp.com">
 		<title>{{ title|default("QET America") }}</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
@@ -120,7 +121,7 @@
 		{# jQuery 1.11.3 is included by default, and required by both Bootstrap
 			and the KeystoneJS Content Editor. If you are not targeting IE8,
 			you can upgrade to 2.1.4 (also bundled) for better performance. #}
-		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
+		<script src="/js/jquery/jquery-2.1.4.min.js"></script>
 
 		{# Customise which Bootstrap javascript files are served by including
 			them specifically here, instead of bootstrap-3.3.5.min.js #}
@@ -132,9 +133,6 @@
 			<script src="/keystone/js/content/editor.js"></script>
 		{%- endif -%}
 
-		{# Add scripts that are globally required by your site here. #}
-
-		{# Include template-specific javascript files by extending the js block #}
 		{%- block js -%}{%- endblock -%}
 	</body>
 </html>

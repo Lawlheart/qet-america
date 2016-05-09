@@ -1,25 +1,14 @@
 {% extends "../layouts/default.swig" %}
 
+{% import "../mixins/macros.swig" as Macros %}
+
 {% macro showPost(post) %}
 	<div class="post" data-ks-editable="editable(user, { list: 'Post', id: post.id })">
 		<h2>
 			<a href="/blog/post/{{ post.slug }}">{{ post.title }}</a>
 		</h2>
-		<p class="lead text-muted">Posted
-			{% if post.publishedDate %}
-				<br>on {{ post._.publishedDate.format("MMMM Do, YYYY") }}
-			{% endif %}
-			{% if post.categories and post.categories.length %}
-				<br>in
-				{% for cat in post.categories %}
-					<a href="/blog/{{ cat.key }}">{{ cat.name }}</a>
-					{% if loop.index < post.categories.length - 1 %}, {% endif %}
-				{% endfor %}
-			{% endif %}
-			{% if post.author %}
-				<br>by {{ post.author.name.first }}
-			{% endif %}
-		</p>
+		<p class="lead text-muted">{{ Macros.postInfo(post) }}</p>
+
 		{% if post.image.exists %}
 			<img src="{{ post._.image.fit(160,160) }}" class="img pull-right">
 		{% elseif post.video.exists %}
@@ -116,7 +105,7 @@
 			{% if data.categories.length %}
 			<div class="col-sm-4 col-md-3">
 				<h2>Categories</h2>
-				<div class="list-group" style="margin-top: 70px;">
+				<div class="list-group category-list">
 					<a href="/blog" class="{% if not data.category %}active{% endif %} list-group-item">All Categories</a>
 					{% for cat in data.categories %}
 						<a href="/blog/{{ cat.key }}" class="{% if data.category and data.category.id == cat.id %}active{% endif %} list-group-item">{{ cat.name }}</a>
