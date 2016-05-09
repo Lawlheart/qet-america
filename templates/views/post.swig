@@ -1,9 +1,11 @@
 {% extends "../layouts/default.swig" %}
 
+{% import "../mixins/macros.swig" as Macros %}
+
 {% block content %}
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+			<div class="col-md-12">
 				<article>
 					<p>
 						<a href="/blog">&larr; back to the blog</a>
@@ -14,32 +16,35 @@
 					{% else %}
 						<header>
 							<h1>{{ data.post.title }}</h1>
-							<h5>Posted</h5>
-							{% if data.post.publishedDate %}
-								on {{ data.post._.publishedDate.format("MMMM Do, YYYY") }}
+							<h5>{{ Macros.postInfo(data) }}</h5>
+						</header>
+
+						<div class="post">
+
+							{# Video, if it exists #}
+							{% if data.post.video.exists %}
+								{{ data.post.video.html | safe }}
 							{% endif %}
-							{{data.post.docs.exists}}
+
+							{# Image, if it exists #}
+							{% if data.post.image.exists %}
+								<div class="image-wrap">
+									{% if data.post.video.exists %}
+										<img src="{{ data.post._.image.fit(750,450) }}" class="img-responsive">
+									{% else %}
+										<img src="{{ data.post._.image.fit(150,90) }}" class="img-thumb">
+									{% endif %}
+								</div>
+							{% endif %}
+
+							{# Document, if it exists #}
 							{% if data.post.docs.exists %}
 								<p>Documents: <a href="{{ data.post.docs.url }}" target="_blank">{{data.post.docs.filename}}</a></p>
 							{% endif %}
-							{% if data.post.categories and data.post.categories.length %}
-								in
-								{% for cat in data.post.categories %}
-									<a href="/blog/{{ cat.key }}">{{ cat.name }}</a>
-									{% if loop.index < data.post.categories.length - 1 %}, {% endif %}
-								{% endfor %}
-							{% endif %}
-							{% if data.post.author %}
-								by {{ data.post.author.name.first }}
-							{% endif %}
-						</header>
-						<div class="post">
-							{% if data.post.image.exists %}
-								<div class="image-wrap">
-									<img src="{{ data.post._.image.fit(750,450) }}" class="img-responsive">
-								</div>
-							{% endif %}
+
+							{# Post content #}
 							{{ data.post.content.full | raw }}
+
 						</div>
 					{% endif %}
 				</article>

@@ -18,6 +18,8 @@ Post.add({
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
 	image: { type: Types.CloudinaryImage },
 	docs: { type: Types.S3File, label: 'Documents'},
+	video: { type: Types.Embedly, from: 'videoUrl'},
+	videoUrl: { type: Types.Url },
 	language: { type: Types.Select, options: [
 			{ value: 1, label: 'English' }, 
 			{ value: 2, label: 'Español' }

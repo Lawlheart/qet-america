@@ -1,0 +1,19 @@
+article {
+  header {
+    position: relative;
+    @media screen and (min-width: $screen-small) {
+      h5 {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  .embedly-embed {
+    margin: 20px auto;
+  }
+  .img-thumb {
+    max-width: 260px;
+    margin: auto;
+  }
+}

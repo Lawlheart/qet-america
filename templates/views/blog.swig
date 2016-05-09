@@ -22,6 +22,8 @@
 		</p>
 		{% if post.image.exists %}
 			<img src="{{ post._.image.fit(160,160) }}" class="img pull-right">
+		{% elseif post.video.exists %}
+			<img src="{{ post.video.thumbnailUrl }}" class="img pull-right video-thumb">
 		{% endif %}
 		<p>{{ post.content.brief | safe }}</p>
 		{% if post.content.extended %}

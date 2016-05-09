@@ -5940,3 +5940,22 @@ a {
 
 .gallery-image {
   margin: 20px; }
+
+.video-thumb {
+  max-height: 160px;
+  max-width: 160px; }
+
+article header {
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    article header h5 {
+      position: absolute;
+      top: 0;
+      right: 0; } }
+
+article .embedly-embed {
+  margin: 20px auto; }
+
+article .img-thumb {
+  max-width: 260px;
+  margin: auto; }
