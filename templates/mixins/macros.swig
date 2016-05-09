@@ -20,9 +20,9 @@
 {% endmacro %}
 
 {% macro facebook(slug) %}
-  <div class="fb-share-button" data-href="http://qet-america.herokuapp.com/{{ slug }}" data-layout="button" data-mobile-iframe="true"></div>
+  <div class="fb-share-button" data-href="http://qet-america.herokuapp.com/blog/post/{{ slug }}" data-layout="button" data-mobile-iframe="true"></div>
 {% endmacro %}
 
 {% macro twitter(slug, title) %}
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://qet-america.herokuapp.com/{{ slug }}" data-text="{{ title }}" data-hashtags="QETAmerica">Tweet</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://qet-america.herokuapp.com/blog/post/{{ slug }}" data-text="{{ title }}" data-hashtags="QETAmerica">Tweet</a>
 {% endmacro %}
