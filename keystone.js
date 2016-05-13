@@ -7,6 +7,13 @@ if (process.env.NEW_RELIC_APP_NAME && process.env.NEW_RELIC_LICENSE_KEY) {
 	require('newrelic');
 }
 
+// Require language middleware and express to implement i18n
+// This should not be necessary after upgrading to keystone 0.4
+var language = require('./lib/language');
+var cookieParser = require('cookie-parser');
+var express = require('express');
+var app = express();
+
 // Require keystone
 var keystone = require('keystone');
 var swig = require('swig');
@@ -44,11 +51,19 @@ keystone.init({
 	'mandrill api key': process.env.MANDRILL_KEY,
 	'cloudinary url' : process.env.CLOUDINARY_URL,
 	'language options': {
-		'supported languages': ['en', 'es'],
-		'disable': false
+		'supported languages': ['en', 'es']
 	}
 
 });
+
+// Set language preferences using the backported middleware
+// We also need cookieParser
+app.use(cookieParser());
+var languageOptions = keystone.get('language options') || {};
+if (!languageOptions.disable) {
+	app.use(language(keystone));
+}
+keystone.set('app', app);
 
 // Set up Amazon S3
 keystone.set('s3 config', { 
