@@ -65,6 +65,7 @@
 									<a href="{{ link.href }}">{{ link.label }}</a>
 								</li>
 							{%- endfor %}
+							<li><a href="/donate">Donate</a></li>
 							<li><a href="/documents">Documents</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
