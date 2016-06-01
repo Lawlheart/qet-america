@@ -21,9 +21,9 @@ Post.add({
 	video: { type: Types.Embedly, from: 'videoUrl'},
 	videoUrl: { type: Types.Url },
 	language: { type: Types.Select, options: [
-			{ value: 1, label: 'English' }, 
-			{ value: 2, label: 'Español' }
-		], default: 1 },
+			{ value: 'en', label: 'English' }, 
+			{ value: 'es', label: 'Español' }
+		], default: 'en' },
 	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 }

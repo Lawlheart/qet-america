@@ -58,7 +58,7 @@ keystone.init({
 
 // Set language preferences using the backported middleware
 // We also need cookieParser
-app.use(cookieParser());
+app.use(cookieParser(keystone.get('cookie secret')));
 var languageOptions = keystone.get('language options') || {};
 if (!languageOptions.disable) {
 	app.use(language(keystone));

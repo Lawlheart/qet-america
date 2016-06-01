@@ -1,5 +1,25 @@
 {% extends "../layouts/default.swig" %}
 
+{% macro showPost(post) %}
+	<div class="col-md-6">
+		<h2>
+			<a href="/blog/post/{{ post.slug }}">{{ post.title }}</a>
+		</h2>
+
+		{% if post.image.exists %}
+			<img src="{{ post._.image.fit(160,160) }}" class="img pull-right">
+		{% elseif post.video.exists %}
+			<img src="{{ post.video.thumbnailUrl }}" class="img pull-right video-thumb">
+		{% endif %}
+		<p>{{ post.content.brief | safe }}</p>
+		{% if post.content.extended %}
+			<p class="read-more">
+				<a href="/blog/post/{{ post.slug }}">{{ t('Read more') }}...</a>
+			</p>
+		{% endif %}
+	</div>
+{% endmacro %}
+
 {% block content %}
 	<div id="mainpage">
 		<div id="aboutus" class="half card">
@@ -28,6 +48,14 @@
 					</p>
 				</article>
 			{% endfor %}
+		</div>
+
+		<div class="row">
+			{% if recentPosts.length %}
+				{% for post in recentPosts %}
+					{{ showPost(post) }}
+				{% endfor %}
+			{% endif %}
 		</div>
 	</div>
 	
