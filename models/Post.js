@@ -17,7 +17,7 @@ Post.add({
 	author: { type: Types.Relationship, ref: 'User', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
 	image: { type: Types.CloudinaryImage },
-	docs: { type: Types.S3File, label: 'Documents'},
+	docs: { type: Types.Relationship, ref: 'Document',  label: 'Documents', many: true },
 	video: { type: Types.Embedly, from: 'videoUrl'},
 	videoUrl: { type: Types.Url },
 	language: { type: Types.Select, options: [

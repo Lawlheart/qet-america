@@ -28,8 +28,7 @@ keystone.pre('render', middleware.flashMessages);
 
 // Import Route Controllers
 var routes = {
-	views: importRoutes('./views'),
-	api: importRoutes('./api')
+	views: importRoutes('./views')
 };
 
 // Setup Route Bindings
@@ -41,7 +40,6 @@ exports = module.exports = function(app) {
 	app.get('/blog/post/:post', routes.views.post);
 	app.get('/gallery', routes.views.gallery);
 	app.all('/contact', routes.views.contact);
-	app.get('/docs', routes.api.docs);
 	app.get('/documents', routes.views.documents);
 	app.get('/donate', routes.views.donate);
 	

@@ -8,7 +8,31 @@ var path = require('path');
 exports = module.exports = function(req, res) {
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
+	
+	view.on('init', function(next) {
+		// from blog
+		// var q = keystone.list('Post').paginate({
+		// 	page: req.query.page || 1,
+		// 	perPage: 10,
+		// 	maxPages: 10,
+		// 	filters: {
+		// 		'state': 'published'
+		// 	}
+		// })
+		// .sort('-publishedDate')
+		// .populate('author categories');
+    //
+		// if (locals.data.category) {
+		// 	q.where('categories').in([locals.data.category]);
+		// }
+    //
+		// q.exec(function(err, results) {
+		// 	locals.data.posts = results;
+			next();
+		// });
+	});
 
+	// Internationalization Setup
 	i18next
 	.use(Backend)
 	.init({
@@ -30,6 +54,8 @@ exports = module.exports = function(req, res) {
 		}
 	}, function(err, t) {
 		locals.t = t;
+		
+		
 		// locals.section is used to set the currently selected
 		// item in the header navigation.
 		locals.section = 'home';

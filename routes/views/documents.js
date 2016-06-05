@@ -7,6 +7,8 @@ exports = module.exports = function(req, res) {
   
   // Set locals
   locals.section = 'documents';
+	
+	view.query('documents', keystone.list('Document').model.find());
   
   view.render('documents');
 };

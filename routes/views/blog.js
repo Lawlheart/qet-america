@@ -70,7 +70,7 @@ exports = module.exports = function(req, res) {
 			})
 			.sort('-publishedDate')
 			.populate('author categories');
-		
+		console.log(locals.data.category);
 		if (locals.data.category) {
 			q.where('categories').in([locals.data.category]);
 		}

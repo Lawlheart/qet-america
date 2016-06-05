@@ -1,5 +1,18 @@
 {% extends "../layouts/default.swig" %}
 
+{# Document Schema {
+	id
+	slug
+	title
+	document {
+		filename
+		originalname
+		path
+		size
+		filetype
+		url		
+	}
+} #}
 
 {% block intro %}
   <div class="container">
@@ -9,10 +22,12 @@
 
 {% block content %}
   <div class="container">
-    <ul id="documents"></ul>
+    <ul id="documents">
+		{% for document in documents %}
+			<li class="document">
+				<a href="{{ document.document.url }}">{{ document.title }}</a>
+			</li>
+		{% endfor %}
+	</ul>
   </div>
-{% endblock %}
-
-{% block js %}
-  <script src="js/app/documents.js"></script>
 {% endblock %}
