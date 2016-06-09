@@ -1,16 +1,12 @@
-FROM node:argon
+FROM node:latest
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+MAINTAINER Kenneth Black
 
-# Install app dependencies
-COPY package.json usr/src/app/
-RUN npm install
+COPY 		. /var/www
+WORKDIR 	/var/www
 
-# Bundle app source
-COPY . /usr/src/app
+RUN 		npm install
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD [ "npm", "start" ]
+ENTRYPOINT ["node", "keystone"]

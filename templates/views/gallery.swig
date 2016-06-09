@@ -14,20 +14,25 @@
 	<div class="container">
 		{% if galleries.length %}
 			{% for gallery in galleries %}
-				<h2>{{ gallery.name }}
-					{% if gallery.publishedDate %}
-						<span class="pull-right text-muted gallery-date">{{ gallery._.publishedDate.format("Do MMM YYYY") }}</span>
-					{% endif %}
-				</h2>
-
-				<div class="row gallery-images">
-					{% for image in gallery.images %}
-						<div class="gallery-image">
-							<a href="{{ image.limit(2000,2000) }}" class="swipebox" title="{{ gallery.name }}" rel="{{ gallery.key }}">
-								<img src="{{ image.limit(335,335) }}" class="img-rounded">
-							</a>
-						</div>
-					{% endfor %}
+				<div class="card">
+					<div class="titlebar">
+						<h1>{{ gallery.name }}
+							{% if gallery.publishedDate %}
+								<span class="pull-right text-muted gallery-date">{{ gallery._.publishedDate.format("Do MMM YYYY") }}</span>
+							{% endif %}
+						</h1>
+					</div>
+					
+	
+					<div class="gallery-images">
+						{% for image in gallery.images %}
+							<div class="gallery-image">
+								<a href="{{ image.limit(2000,2000) }}" class="swipebox" title="{{ gallery.name }}" rel="{{ gallery.key }}">
+									<img src="{{ image.limit(315,315) }}" class="img-rounded">
+								</a>
+							</div>
+						{% endfor %}
+					</div>
 				</div>
 			{% endfor %}
 		{% else %}

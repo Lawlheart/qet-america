@@ -13,6 +13,10 @@
 		{% block meta %}{% endblock %}
 		<meta name="twitter:domain" content="qet-america.herokuapp.com">
 		<meta name="fb:app_id" content="185694088491162">
+		
+		<link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 		{# Customise the stylesheet for your site by editing /public/styles/site.sass #}
 		<link href="/styles/site.css" rel="stylesheet">
@@ -37,63 +41,53 @@
 		{%- block head %}{% endblock %}
 	</head>
 	<body>
-
-		{# HEADER #}
-		<div id="header" class="container">
-
-			{# Customise your site"s navigation by changing the navLinks Array in ./routes/middleware.js
-			   ... or completely change this header to suit your design. #}
-			<div role="navigation" class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="/">QET America</a>
-					</div>
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-left">
-							{%- for link in navLinks -%}
-								{%- set linkClass = '' -%}
-								{%- if link.key == section -%}
-									{%- set linkClass = ' class="active"' -%}
-								{%- endif %}
-								<li{{ linkClass | safe }}>
-									<a href="{{ link.href }}">{{ link.label }}</a>
-								</li>
-							{%- endfor %}
-							<li><a href="/donate">Donate</a></li>
-							<li><a href="/documents">Documents</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-						</ul>
-						{# language selector. This should be changed for something better #}
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="mobile">Settings </span><i class="fa fa-cog"></i></a>
-			          <ul class="dropdown-menu">
-
-									{% if user -%}
-				            <li class="nav-category">Account</li>
-										{%- if user.canAccessKeystone -%}
-											<li><a href="/keystone">Open Keystone</a></li>
-										{%- endif -%}
-										<li><a href="/keystone/signout">Sign Out</a></li>
-									{%- else -%}
-										<li><a href="/keystone/signin">Sign In</a></li>
-									{%- endif %}
-			            <li class="nav-category">Language</li>
-									<li><a href="/languages/es">Español</a></li>
-									<li><a href="/languages/en">English</a></li>
-			          </ul>
-			        </li>
-
-						</ul>
-					</div>
-				</div>
+	
+		{# NAVBAR #}
+		<header class="navigation" role="banner">
+			<div class="navigation-wrapper">
+				<a href="/" class="logo">
+					<img class="icon" src="/images/qet.png" alt="QET Icon">
+				</a>
+				<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+				<nav role="navigation">
+					<ul id="js-navigation-menu" class="navigation-menu show">
+						{%- for link in navLinks -%}
+							{%- set linkClass = ' class="nav-link"' -%}
+							{%- if link.key == section -%}
+								{%- set linkClass = ' class="nav-link active"' -%}
+							{%- endif %}
+							<li{{ linkClass | safe }}>
+								<a href="{{ link.href }}">{{ link.label }}</a>
+							</li>
+						{%- endfor %}
+						{% if user -%}
+							<li id="js-navigation-admin" class="nav-link admin more"><a href="javascript:void(0)">Account</a>
+								<ul class="submenu">
+									{%- if user.canAccessKeystone -%}
+										<li><a href="/keystone">Open Keystone</a></li>
+									{%- endif -%}
+									<li><a href="/keystone/signout">Sign Out</a></li>
+								</ul>
+							</li>
+						{%- else -%}
+							<li class="nav-link pull-right"><a href="/keystone/signin">Sign In</a></li>
+						{%- endif %}
+						<li id="js-navigation-lang" class="nav-link lang more"><a href="javascript:void(0)">Language</a>
+							<ul class="submenu">
+								<li><a href="/languages/es">Español</a></li>
+								<li><a href="/languages/en">English</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		{# DONATE BANNER #}
+		<div class="donate-bar" role="banner">
+			<div class="content">
+				<h1>Support QET America</h1>
+				<a class="button cta" target="_blank" href="http://qetamerica.org/product/buena-vistas-select-bean-blend-1lb/">Buy Coffee</a>
 			</div>
 		</div>
 
@@ -115,21 +109,37 @@
 		</div>
 
 		{# FOOTER #}
-		<div id="footer" class="container">
-			{# You don"t _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it! #}
-			<p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
-		</div>
+		<footer class="footer" role="contentinfo">
+			<div class="footer-logo">
+				<img class="icon" src="/images/qet.png" alt="QET Icon">
+			</div>
+			<div class="footer-links">
+				<ul>
+					<li><h3>QET America</h3></li>
+					<li><a href="/">Home</a></li>
+					<li><a href="/blog">Blog</a></li>
+					<li><a href="/gallery">Gallery</a></li>
+					<li><a href="/donate">Donate</a></li>
+				</ul>
+				<ul>
+					<li><h3>Follow Us</h3></li>
+					<li><a href="javascript:void(0)">Facebook</a></li>
+					<li><a href="javascript:void(0)">Twitter</a></li>
+					<li><a href="javascript:void(0)">YouTube</a></li>
+				</ul>
+				<ul>
+					<li><h3>Legal</h3></li>
+					<li><a href="javascript:void(0)">Terms and Conditions</a></li>
+					<li><a href="javascript:void(0)">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<hr>
+			<p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
+			<p>Sustainability Icon by Lemon Liu from the Noun Project</p>
+		</footer>
 
-		{# JAVASCRIPT #}
-
-		{# jQuery 1.11.3 is included by default, and required by both Bootstrap
-			and the KeystoneJS Content Editor. If you are not targeting IE8,
-			you can upgrade to 2.1.4 (also bundled) for better performance. #}
 		<script src="/js/jquery/jquery-2.1.4.min.js"></script>
-
-		{# Customise which Bootstrap javascript files are served by including
-			them specifically here, instead of bootstrap-3.3.5.min.js #}
-		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
+		<script src="/js/app/app.js"></script>
 
 		{# The KeystoneJS Content Editor provides support for ks-editable data attributes,
 			which generate links to edit content for users who can access Keystone #}
