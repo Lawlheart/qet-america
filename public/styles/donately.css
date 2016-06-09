@@ -1,22 +1,22 @@
-/*Not loaded directly, leaded with donately embed attribute*/
+/*Not loaded directly, loaded with donately embed attribute*/
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 input.donately-text-input {
-	background-color: #121418 !important;
-	border: 1px solid #050505 !important;
+	background-color: #222428 !important;
+	border: 1px solid #121418 !important;
 	color: #fff !important;
 }
 label.donately-label {
 	color: #fff;
 }
 div.donately-secure-fields {
-	background-color: #121418;
+	background-color: #222428;
 	color: #fff;
-	border: 1px solid #050505;
+	border: 1px solid #121418;
 }
 .donately-secure-header {
-	background-color: #090909;
+	background-color: #121418;
 	box-shadow: none;
 }
 .donately-btn.donately-submit {

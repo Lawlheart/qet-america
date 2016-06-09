@@ -5,18 +5,17 @@
 {% block content %}
 	{# For testing purposes #}
 	{# <pre>{{ data.post | json }}</pre> #}
-	<div class="container">
+	<div id="post">
 		<div class="row">
 			<div class="col-md-12">
-				<article>
-					<p>
-						<a href="/blog">&larr; back to the blog</a>
-					</p>
-					<hr>
+				<p>
+					<a href="/blog">&larr; back to the blog</a>
+				</p>
+				<article class="card">
 					{% if not data.post %}
 						<h2>Invalid Post.</h2>
 					{% else %}
-						<header>
+						<header class="titlebar">
 							<h1>{{ data.post.title }}</h1>
 							<h5>{{ Macros.postInfo(data.post) }}</h5>
 							<div class="share">

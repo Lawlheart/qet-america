@@ -2,24 +2,201 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="131a2f4f-0107-4986-87f3-8694c8aed700" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/News.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/mixins/_articles.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/mixins/_footer.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/mixins/_layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/mixins/_navbar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/styles/site/_index.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/styles/site/_layout.scss" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/site/_variables.scss" afterPath="$PROJECT_DIR$/public/styles/mixins/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-compass.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/_bootstrap-compass.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-mincer.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/_bootstrap-mincer.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-sprockets.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/_bootstrap-sprockets.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/_bootstrap.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_alerts.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_alerts.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_badges.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_badges.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_breadcrumbs.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_button-groups.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_button-groups.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_buttons.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_buttons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_carousel.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_carousel.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_close.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_close.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_code.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_code.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_component-animations.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_component-animations.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_dropdowns.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_dropdowns.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_forms.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_forms.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_glyphicons.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_glyphicons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_grid.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_grid.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_input-groups.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_input-groups.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_jumbotron.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_jumbotron.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_labels.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_labels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_list-group.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_media.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_media.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_mixins.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_modals.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_modals.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_navbar.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_navbar.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_navs.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_navs.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_normalize.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_normalize.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_pager.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_pager.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_pagination.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_pagination.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_panels.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_panels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_popovers.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_popovers.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_print.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_print.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_progress-bars.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_progress-bars.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_responsive-embed.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_responsive-embed.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_responsive-utilities.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_responsive-utilities.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_scaffolding.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_scaffolding.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_tables.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_tables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_theme.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_theme.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_thumbnails.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_thumbnails.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_tooltip.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_tooltip.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_type.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_type.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_utilities.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_utilities.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_wells.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/_wells.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_alerts.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_alerts.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_background-variant.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_border-radius.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_border-radius.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_buttons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_center-block.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_center-block.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_clearfix.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_clearfix.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_forms.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_forms.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_gradients.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_grid-framework.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_grid.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_grid.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_hide-text.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_hide-text.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_image.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_image.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_labels.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_labels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_list-group.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_nav-divider.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_nav-divider.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_nav-vertical-align.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_nav-vertical-align.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_opacity.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_opacity.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_pagination.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_pagination.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_panels.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_panels.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_progress-bar.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_progress-bar.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_reset-filter.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_reset-filter.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_reset-text.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_reset-text.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_resize.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_resize.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_responsive-visibility.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_responsive-visibility.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_size.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_size.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_tab-focus.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_tab-focus.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_table-row.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_table-row.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_text-emphasis.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_text-overflow.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_text-overflow.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bootstrap/bootstrap/mixins/_vendor-prefixes.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/_bourbon-deprecated-upcoming.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/_bourbon-deprecated-upcoming.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/_bourbon.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/_bourbon.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_border-color.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_border-color.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_border-radius.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_border-radius.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_border-style.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_border-style.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_border-width.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_border-width.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_buttons.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_buttons.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_clearfix.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_clearfix.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_ellipsis.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_ellipsis.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_font-stacks.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_font-stacks.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_hide-text.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_hide-text.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_margin.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_margin.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_padding.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_padding.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_position.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_position.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_prefixer.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_prefixer.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_retina-image.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_retina-image.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_size.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_size.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_text-inputs.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_text-inputs.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_timing-functions.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_timing-functions.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_triangle.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_triangle.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/addons/_word-wrap.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/addons/_word-wrap.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_animation.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_animation.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_appearance.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_appearance.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_backface-visibility.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_backface-visibility.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_background-image.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_background-image.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_background.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_background.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_border-image.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_border-image.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_calc.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_calc.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_columns.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_columns.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_filter.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_filter.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_flex-box.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_flex-box.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_font-face.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_font-face.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_font-feature-settings.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_font-feature-settings.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_hidpi-media-query.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_hidpi-media-query.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_hyphens.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_hyphens.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_image-rendering.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_image-rendering.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_keyframes.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_keyframes.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_linear-gradient.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_linear-gradient.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_perspective.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_perspective.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_placeholder.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_placeholder.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_radial-gradient.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_radial-gradient.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_selection.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_selection.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_text-decoration.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_text-decoration.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_transform.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_transform.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_transition.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_transition.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/css3/_user-select.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/css3/_user-select.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_assign-inputs.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_assign-inputs.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_contains-falsy.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_contains-falsy.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_contains.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_contains.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_is-length.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_is-length.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_is-light.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_is-light.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_is-number.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_is-number.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_is-size.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_is-size.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_modular-scale.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_modular-scale.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_px-to-em.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_px-to-em.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_px-to-rem.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_px-to-rem.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_shade.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_shade.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_strip-units.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_strip-units.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_tint.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_tint.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_transition-property-name.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_transition-property-name.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/functions/_unpack.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/functions/_unpack.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_convert-units.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_convert-units.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_directional-values.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_directional-values.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_font-source-declaration.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_font-source-declaration.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_gradient-positions-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_gradient-positions-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_linear-angle-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_linear-angle-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_linear-gradient-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_linear-gradient-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_linear-positions-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_linear-positions-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_linear-side-corner-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_linear-side-corner-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_radial-arg-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_radial-arg-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_radial-gradient-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_radial-gradient-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_radial-positions-parser.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_radial-positions-parser.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_render-gradients.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_render-gradients.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_shape-size-stripper.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_shape-size-stripper.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_str-to-num.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/helpers/_str-to-num.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/settings/_asset-pipeline.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/settings/_asset-pipeline.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/settings/_prefixer.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/settings/_prefixer.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/bourbon/settings/_px-to-em.scss" afterPath="$PROJECT_DIR$/public/styles/lib/bourbon/settings/_px-to-em.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/mixins/_articles.scss" afterPath="$PROJECT_DIR$/public/styles/modules/_articles.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/mixins/_footer.scss" afterPath="$PROJECT_DIR$/public/styles/modules/_footer.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/mixins/_layout.scss" afterPath="$PROJECT_DIR$/public/styles/modules/_layout.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/mixins/_navbar.scss" afterPath="$PROJECT_DIR$/public/styles/modules/_navbar.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/mixins/_variables.scss" afterPath="$PROJECT_DIR$/public/styles/modules/_variables.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/_neat-helpers.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/_neat-helpers.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/_neat.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/_neat.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/functions/_new-breakpoint.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/functions/_new-breakpoint.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/functions/_private.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/functions/_private.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_box-sizing.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_box-sizing.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_direction-context.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_direction-context.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_display-context.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_display-context.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_fill-parent.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_fill-parent.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_media.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_media.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_omega.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_omega.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_outer-container.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_outer-container.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_pad.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_pad.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_private.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_private.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_row.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_row.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_shift.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_shift.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_span-columns.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_span-columns.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_to-deprecate.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_to-deprecate.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/grid/_visual-grid.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/grid/_visual-grid.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/settings/_disable-warnings.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/settings/_disable-warnings.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/settings/_grid.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/settings/_grid.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/neat/settings/_visual-grid.scss" afterPath="$PROJECT_DIR$/public/styles/lib/neat/settings/_visual-grid.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/site/_blog.scss" afterPath="$PROJECT_DIR$/public/styles/pages/_blog.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/site/_donate.scss" afterPath="$PROJECT_DIR$/public/styles/pages/_donate.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/site/_gallery.scss" afterPath="$PROJECT_DIR$/public/styles/pages/_gallery.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/site/_index.scss" afterPath="$PROJECT_DIR$/public/styles/pages/_index.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/styles/site/_post.scss" afterPath="$PROJECT_DIR$/public/styles/pages/_post.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/Cafe-Buena-Vista.png" afterPath="$PROJECT_DIR$/public/images/Cafe-Buena-Vista.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/banner.jpg" afterPath="$PROJECT_DIR$/public/images/banner.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/default.jpg" afterPath="$PROJECT_DIR$/public/images/default.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/favicon.ico" afterPath="$PROJECT_DIR$/public/images/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/generic.png" afterPath="$PROJECT_DIR$/public/images/generic.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/logo-email.gif" afterPath="$PROJECT_DIR$/public/images/logo-email.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/qet.png" afterPath="$PROJECT_DIR$/public/images/qet.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/.editorconfig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/QETAmerica.iml" afterPath="$PROJECT_DIR$/.idea/QETAmerica.iml" />
@@ -38,11 +215,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Documents.js" afterPath="$PROJECT_DIR$/models/Documents.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Enquiry.js" afterPath="$PROJECT_DIR$/models/Enquiry.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Gallery.js" afterPath="$PROJECT_DIR$/models/Gallery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/News.js" afterPath="$PROJECT_DIR$/models/News.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Post.js" afterPath="$PROJECT_DIR$/models/Post.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/PostCategory.js" afterPath="$PROJECT_DIR$/models/PostCategory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/User.js" afterPath="$PROJECT_DIR$/models/User.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/app.js" afterPath="$PROJECT_DIR$/public/js/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/documents.js" afterPath="$PROJECT_DIR$/public/js/app/documents.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/donate.js" afterPath="$PROJECT_DIR$/public/js/app/donate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app/share.js" afterPath="$PROJECT_DIR$/public/js/app/share.js" />
@@ -65,88 +244,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-1.11.3.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/jquery-1.11.3.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-2.1.4.js" afterPath="$PROJECT_DIR$/public/js/jquery/jquery-2.1.4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery/jquery-2.1.4.min.js" afterPath="$PROJECT_DIR$/public/js/jquery/jquery-2.1.4.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-compass.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-compass.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-mincer.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-mincer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-sprockets.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap-sprockets.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/_bootstrap.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_alerts.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_alerts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_badges.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_badges.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_breadcrumbs.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_breadcrumbs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_button-groups.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_button-groups.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_buttons.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_carousel.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_carousel.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_close.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_close.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_code.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_code.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_component-animations.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_component-animations.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_dropdowns.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_dropdowns.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_forms.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_glyphicons.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_glyphicons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_grid.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_grid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_input-groups.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_input-groups.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_jumbotron.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_jumbotron.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_labels.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_labels.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_list-group.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_list-group.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_media.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_media.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_mixins.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_mixins.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_modals.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_modals.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_navbar.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_navs.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_navs.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_normalize.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_normalize.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_pager.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_pager.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_pagination.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_pagination.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_panels.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_panels.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_popovers.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_popovers.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_print.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_print.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_progress-bars.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_progress-bars.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_responsive-embed.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_responsive-embed.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_responsive-utilities.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_responsive-utilities.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_scaffolding.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_scaffolding.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_tables.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_tables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_theme.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_theme.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_thumbnails.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_thumbnails.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_tooltip.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_tooltip.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_type.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_type.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_utilities.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_utilities.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_wells.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/_wells.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_alerts.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_alerts.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_background-variant.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_border-radius.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_border-radius.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_buttons.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_center-block.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_center-block.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_clearfix.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_clearfix.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_forms.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_forms.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_gradients.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_grid-framework.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_grid.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_grid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_hide-text.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_hide-text.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_image.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_image.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_labels.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_labels.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_list-group.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_nav-divider.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_nav-divider.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_nav-vertical-align.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_nav-vertical-align.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_opacity.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_opacity.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_pagination.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_pagination.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_panels.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_panels.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_progress-bar.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_progress-bar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_reset-filter.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_reset-filter.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_reset-text.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_reset-text.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_resize.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_resize.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_responsive-visibility.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_responsive-visibility.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_size.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_size.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_tab-focus.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_tab-focus.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_table-row.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_table-row.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_text-emphasis.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_text-overflow.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_text-overflow.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_vendor-prefixes.scss" afterPath="$PROJECT_DIR$/public/styles/bootstrap/bootstrap/mixins/_vendor-prefixes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/bourbon/helpers/_directional-values.scss" afterPath="$PROJECT_DIR$/public/styles/bourbon/helpers/_directional-values.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/donately.css" afterPath="$PROJECT_DIR$/public/styles/donately.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site.css" afterPath="$PROJECT_DIR$/public/styles/site.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site.scss" afterPath="$PROJECT_DIR$/public/styles/site.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site/_blog.scss" afterPath="$PROJECT_DIR$/public/styles/site/_blog.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site/_donate.scss" afterPath="$PROJECT_DIR$/public/styles/site/_donate.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site/_gallery.scss" afterPath="$PROJECT_DIR$/public/styles/site/_gallery.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/site/_post.scss" afterPath="$PROJECT_DIR$/public/styles/site/_post.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/emails.js" afterPath="$PROJECT_DIR$/routes/emails.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/middleware.js" afterPath="$PROJECT_DIR$/routes/middleware.js" />
@@ -191,21 +291,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.swig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/views/index.swig">
+      <file leaf-file-name="_blog.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/styles/pages/_blog.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.swig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/layouts/default.swig">
+      <file leaf-file-name="_post.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/styles/pages/_post.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+            <state relative-caret-position="255">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/styles/modules/_layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="27" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_navbar.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/styles/modules/_navbar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -214,30 +334,20 @@
       <file leaf-file-name="post.swig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/views/post.swig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
-                <element signature="e#1635#1753#0#Twig" expanded="false" />
+                <element signature="e#1644#1762#0#Twig" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navbar.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/styles/mixins/_navbar.scss">
+      <file leaf-file-name="_articles.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/styles/modules/_articles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/styles/mixins/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+            <state relative-caret-position="17">
+              <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -246,18 +356,8 @@
       <file leaf-file-name="site.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/styles/site.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/styles/mixins/_layout.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -284,13 +384,11 @@
         <option value="$PROJECT_DIR$/public/styles/donately.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/js/app/donate.js" />
-        <option value="$PROJECT_DIR$/public/styles/donately.css" />
         <option value="$PROJECT_DIR$/models/Documents.js" />
         <option value="$PROJECT_DIR$/routes/views/documents.js" />
         <option value="$PROJECT_DIR$/templates/views/documents.swig" />
         <option value="$PROJECT_DIR$/models/Post.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/routes/views/blog.js" />
         <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/models/News.js" />
         <option value="$PROJECT_DIR$/routes/middleware.js" />
@@ -303,7 +401,6 @@
         <option value="$PROJECT_DIR$/routes/views/index.js" />
         <option value="$PROJECT_DIR$/public/styles/site/_layout.scss" />
         <option value="$PROJECT_DIR$/public/styles/mixins/_card.scss" />
-        <option value="$PROJECT_DIR$/public/styles/site.scss" />
         <option value="$PROJECT_DIR$/public/styles/mixins/_footer.scss" />
         <option value="$PROJECT_DIR$/public/styles/mixins/_navbar.scss" />
         <option value="$PROJECT_DIR$/public/styles/mixins/_articles.scss" />
@@ -313,10 +410,19 @@
         <option value="$PROJECT_DIR$/templates/views/donate.swig" />
         <option value="$PROJECT_DIR$/templates/views/gallery.swig" />
         <option value="$PROJECT_DIR$/public/styles/site/_gallery.scss" />
-        <option value="$PROJECT_DIR$/public/styles/mixins/_layout.scss" />
         <option value="$PROJECT_DIR$/public/styles/mixins/_variables.scss" />
-        <option value="$PROJECT_DIR$/templates/views/post.swig" />
         <option value="$PROJECT_DIR$/templates/layouts/default.swig" />
+        <option value="$PROJECT_DIR$/routes/views/blog.js" />
+        <option value="$PROJECT_DIR$/public/styles/donately.css" />
+        <option value="$PROJECT_DIR$/public/styles/mixins/_layout.scss" />
+        <option value="$PROJECT_DIR$/public/styles/site.scss" />
+        <option value="$PROJECT_DIR$/public/styles/modules/_layout.scss" />
+        <option value="$PROJECT_DIR$/public/styles/modules/_articles.scss" />
+        <option value="$PROJECT_DIR$/public/styles/modules/_navbar.scss" />
+        <option value="$PROJECT_DIR$/templates/views/blog.swig" />
+        <option value="$PROJECT_DIR$/public/styles/pages/_blog.scss" />
+        <option value="$PROJECT_DIR$/templates/views/post.swig" />
+        <option value="$PROJECT_DIR$/public/styles/pages/_post.scss" />
       </list>
     </option>
   </component>
@@ -566,7 +672,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
+              <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -588,25 +694,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mixins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QETAmerica" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QETAmerica" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -627,6 +715,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kenneth\Coding\FreeCodeCamp\nonprofits\QETAmerica\public\styles\lib" />
       <recent name="C:\Users\Kenneth\Coding\FreeCodeCamp\nonprofits\QETAmerica\public\styles\mixins" />
     </key>
   </component>
@@ -737,12 +826,14 @@
       <workItem from="1465239384765" duration="6734000" />
       <workItem from="1465252078506" duration="318000" />
       <workItem from="1465463813134" duration="118000" />
-      <workItem from="1465465522761" duration="28898000" />
+      <workItem from="1465465522761" duration="31917000" />
+      <workItem from="1465506809446" duration="447000" />
+      <workItem from="1465507311162" duration="3653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63834000" />
+    <option name="totallyTimeSpent" value="70953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -752,10 +843,9 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16517857" sideWeight="0.4917647" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28805238" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2875817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -765,6 +855,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -786,61 +877,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/styles/site/_donate.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/views/donate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/donate.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/documents.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -856,20 +892,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -913,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,7 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="15" column="102" selection-start-line="15" selection-start-column="102" selection-end-line="16" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,31 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/donately.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/views/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/blog.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,15 +1027,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1817">
           <caret line="122" column="3" selection-start-line="122" selection-start-column="3" selection-end-line="122" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/middleware.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,15 +1034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,131 +1041,83 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_card.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_card.scss" />
+    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_footer.scss" />
     <entry file="file://$PROJECT_DIR$/routes/views/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding>
-            <element signature="e#402#855#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_articles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1394">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/site/_donate.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_articles.scss" />
+    <entry file="file://$PROJECT_DIR$/public/styles/site/_donate.scss" />
     <entry file="file://$PROJECT_DIR$/templates/views/donate.swig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/site/_index.scss" />
+    <entry file="file://$PROJECT_DIR$/templates/views/gallery.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/site/_gallery.scss" />
+    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_navbar.scss" />
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/site/_index.scss">
+    <entry file="file://$PROJECT_DIR$/routes/middleware.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="510">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_variables.scss" />
+    <entry file="file://$PROJECT_DIR$/public/styles/donately.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_layout.scss" />
+    <entry file="file://$PROJECT_DIR$/routes/views/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/emails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/views/index.swig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state relative-caret-position="238">
+          <caret line="26" column="102" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="102" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/gallery.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/site/_gallery.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/site.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/mixins/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/views/post.swig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#1635#1753#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,6 +1125,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/pages/_index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/modules/_articles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/site.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/blog.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-196">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/pages/_blog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/modules/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="27" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/modules/_navbar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/views/post.swig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="e#1644#1762#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/pages/_post.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding />
         </state>
       </provider>

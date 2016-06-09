@@ -1,0 +1,83 @@
+#blog-container {
+  @include outer-container;
+  #blog-posts {
+	position: relative;
+	@include span-columns(10);
+  }
+  #blog-categories {
+	@include span-columns(2);
+  }
+  @media screen and (max-width: $large-screen) {
+	#blog-categories, #blog-posts {
+	  @include span-columns(12);
+	}
+  }
+}
+#blog-title {
+  margin: 0.25em 0 0.75em;
+}
+.showing {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.video-thumb {
+  max-height: 160px;
+  max-width: 160px;
+  @media screen and (max-width: $screen-small) {
+    margin: 0 0 16px 16px;
+  }
+}
+
+.post {
+  position: relative;
+  @media screen and (min-width: $screen-medium) {
+    .lead {
+      position: absolute;
+	  font-size: 1.2em;
+      top: 0;
+      right: 20px;
+    }
+  }
+  a.read-more {
+	text-decoration: none;
+	display: inline-block;
+	font-family: $sans-serif-2;
+	font-size: 0.8em;
+	font-weight: 700;
+	margin-left: 0.2em;
+	position: relative;
+	text-transform: uppercase;
+	line-height: 1.4em;
+
+	span {
+	  font-size: 1.5em;
+	  position: absolute;
+	  right: -12px;
+	  top: -1px;
+	}
+  }
+}
+
+.category-list {
+  .category {
+    color: transparentize(#fff, 0.3);
+    background-color: $dark-green;
+    border-color: darken($dark-green, 2%);
+	border-radius: 0;
+	padding: ($base-spacing / 4) ($gutter / 2);
+	display: block;
+	transition: all 0.2s ease-in-out;
+	width: 100%;
+	&:first-child {
+	  border-radius: $base-border-radius $base-border-radius 0 0;
+	}
+	&:last-child {
+	  border-radius: 0 0 $base-border-radius $base-border-radius;
+	}
+    &:hover, &.active {
+      color: #fff;
+      background-color: $green;
+    }
+  }
+}

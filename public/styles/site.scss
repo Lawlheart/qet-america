@@ -1,34 +1,19 @@
-// Bootstrap
-// =========
+// Bourbon
+@import "lib/bourbon/bourbon";
+@import "lib/neat/neat";
 
-// Bootstrap can be removed entirely by deleting this line.
+// General
+@import "modules/variables";
+@import "modules/layout";
 
-//@import "bootstrap/bootstrap";
+// Components
+@import "modules/navbar";
+@import "modules/footer";
+@import "modules/articles";
 
-// Importing Bourbon
-
-@import "bourbon/bourbon";
-@import "neat/neat";
-
-// The easiest way to customise Bootstrap variables while
-// being able to easily override the source files with new
-// versions is to override the ones you want in another file.
-//
-// You can also add your own custom variables to this file for
-// use in your site stylesheets.
-
-@import "mixins/variables";
-@import "mixins/navbar";
-@import "mixins/footer";
-@import "mixins/articles";
-@import "mixins/layout";
-
-
-// Site Styles
-// ===========
-
-@import "site/index";
-@import "site/blog";
-@import "site/post";;
-@import "site/gallery";
-@import "site/donate";
+// Page Styles
+@import "pages/index";
+@import "pages/blog";
+@import "pages/post";;
+@import "pages/gallery";
+@import "pages/donate";

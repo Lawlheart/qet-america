@@ -5,8 +5,9 @@ body {
 
 a {
   color: lighten($lighter-teal, 20%);
+  text-decoration: none;
   &:hover {
-    color: lighten($lighter-blue, 20%);
+    color: lighten($lighter-teal, 25%);
     text-decoration: none;
   }
 }
@@ -102,6 +103,7 @@ a.button {
 .card {
   background-color: $light-gray;
   padding: 20px;
+  margin-bottom: 20px;
   img {
 	max-width: 100%;
   }
@@ -111,6 +113,12 @@ a.button {
 	background-color: $green;
 	h1 {
 	  margin: 0;
+	  a {
+		color: #fff;
+		&:hover {
+		  color: transparentize(#fff, 0.3);
+		}
+	  }
 	}
   }
 }

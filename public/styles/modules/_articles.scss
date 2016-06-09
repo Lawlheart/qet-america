@@ -1,5 +1,5 @@
-article.type-system-rounded {
-  $action-color: $light-green;
+article.type-system-rounded, .article.type-system-rounded {
+  $action-color: lighten($lighter-teal, 20%);
   
   @include clearfix;
   font-family: $sans-serif;
