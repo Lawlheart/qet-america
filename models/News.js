@@ -12,9 +12,10 @@ News.add({
 	publishedDate: { type: Types.Date, index: true },
 	image: { type: Types.CloudinaryImage },
 	language: { type: Types.Select, options: [
-		{ value: 1, label: 'English' },
-		{ value: 2, label: 'Español' }
-	], default: 1 },content: {
+		{ value: 'en', label: 'English' },
+		{ value: 'es', label: 'Español' }
+	], default: 'en' },
+	content: {
 		brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		extended: { type: Types.Html, wysiwyg: true, height: 400 }
 	}
