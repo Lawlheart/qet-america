@@ -92,8 +92,8 @@
 		{# DONATE BANNER #}
 		<div class="donate-bar" role="banner">
 			<div class="content">
-				<h1>Support QET America</h1>
-				<a class="button cta" target="_blank" href="http://qetamerica.org/product/buena-vistas-select-bean-blend-1lb/">Buy Coffee</a>
+				<h1>{{ t('Support QET America') }}</h1>
+				<a class="button cta" target="_blank" href="http://qetamerica.org/product/buena-vistas-select-bean-blend-1lb/">{{ t('Buy Coffee') }}</a>
 			</div>
 		</div>
 
@@ -122,13 +122,13 @@
 			<div class="footer-links">
 				<ul>
 					<li><h3>QET America</h3></li>
-					<li><a href="/">Home</a></li>
+					<li><a href="/">{{ t('Home') }}</a></li>
 					<li><a href="/blog">Blog</a></li>
-					<li><a href="/gallery">Gallery</a></li>
-					<li><a href="/donate">Donate</a></li>
+					<li><a href="/gallery">{{ t('Gallery') }}</a></li>
+					<li><a href="/donate">{{ t('Donate') }}</a></li>
 				</ul>
 				<ul>
-					<li><h3>Follow Us</h3></li>
+					<li><h3>{{ t('Follow Us') }}</h3></li>
 					<li><a href="javascript:void(0)">Facebook</a></li>
 					<li><a href="javascript:void(0)">Twitter</a></li>
 					<li><a href="javascript:void(0)">YouTube</a></li>
