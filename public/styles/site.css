@@ -634,6 +634,12 @@ article .video-frame {
     #post .card .titlebar {
       margin-bottom: 60px; } }
 
+.document-container {
+  height: 400px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto; }
+
 .gallery-date::after {
   clear: both;
   content: "";

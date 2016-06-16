@@ -4,7 +4,7 @@
 {% block content %}
 	<div class="card">
 		<div class="titlebar">
-			<h1>Donate to QET</h1>
+			<h1>{{ t('Donate to QET') }}</h1>
 		</div>
 		<div id="donate">
 			<script src="https://www.dntly.com/assets/js/v1/form.js" 

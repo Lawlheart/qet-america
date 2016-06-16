@@ -1,12 +1,12 @@
 {% macro postInfo(post) %}
 {# Posted (on DATE) (in CATEGORIES) (by AUTHOR) #}
-  Posted
+  {{ t('Posted') }}
   {% if post.publishedDate %}
-    on {{ post._.publishedDate.format("MMMM Do, YYYY") }}
+    {{ t('on') }} {{ post._.publishedDate.format("MMMM Do, YYYY") }}
   {% endif %}
 
   {% if post.categories and post.categories.length %}
-    in
+    {{ 'in' }}
     {% for cat in post.categories %}
       <a href="/blog/{{ cat.key }}">{{ cat.name }}</a>
       {% if loop.index < post.categories.length - 1 %}, {% endif %}
@@ -15,7 +15,7 @@
 
   {# Author, if it exists #}
   {% if post.author %}
-    by {{ post.author.name.first }}
+    {{ 'by' }} {{ post.author.name.first }}
   {% endif %}
 {% endmacro %}
 

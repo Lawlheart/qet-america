@@ -9,11 +9,11 @@
 		<div class="row">
 			<div class="col-md-12">
 				<p>
-					<a href="/blog">&larr; back to the blog</a>
+					<a href="/blog">&larr; {{ t('back to the blog') }}</a>
 				</p>
 				<article class="card">
 					{% if not data.post %}
-						<h2>Invalid Post.</h2>
+						<h2>{{ t('Invalid Post') }}.</h2>
 					{% else %}
 						<header class="titlebar">
 							<h1>{{ data.post.title }}</h1>
@@ -45,8 +45,14 @@
 							{% endif %}
 
 							{# Document, if it exists #}
-							{% if data.post.docs.exists %}
-								<p>Documents: <a href="{{ data.post.docs.url }}" target="_blank">{{data.post.docs.filename}}</a></p>
+							{% if data.post.docs.length %}
+								{% for data in data.post.docs %}
+									<p>Documents: <a href="{{ data.document.url }}" target="_blank">{{ data.document.filename }}</a></p>
+									<div class="document-container" id='print'>
+										<iframe src="http://docs.google.com/viewer?url=https:{{ data.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
+									</div>
+								<button onClick="document.getElementById('print').print();"></button>
+								{% endfor %}
 							{% endif %}
 
 							{# Post content #}
@@ -64,6 +70,7 @@
 	{# Share Buttons #}
 	<div id="fb-root"></div>
 	<script src="/js/app/share.js"></script>
+	
 {% endblock %}
 
 {% block meta %}

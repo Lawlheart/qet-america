@@ -16,7 +16,7 @@
 		<p>{{ post.content.brief | safe }}</p>
 		{% if post.content.extended %}
 			<p class="read-more">
-				<a class="read-more" href="/blog/post/{{ post.slug }}">Read more <span>&rsaquo;</span></a>
+				<a class="read-more" href="/blog/post/{{ post.slug }}">{{ t('Read more') }} <span>&rsaquo;</span></a>
 			</p>
 		{% endif %}
 	</div>
@@ -29,22 +29,22 @@
 			{% if data.category %}
 				{% set title = data.category.name %}
 			{% endif %}
-			<h1 id="blog-title">{{ title }}</h1>
+			<h1 id="blog-title">{{ t(title) }}</h1>
 			{% if filters.category and not data.category %}
-				<h3 class="text-muted">Invalid Category.</h3>
+				<h3 class="text-muted">{{ t('Invalid Category') }}.</h3>
 			{% else %}
 				{% if data.posts.results.length %}
 					{% if data.posts.totalPages > 1 %}
-						<h4 class="text-weight-normal showing">Showing 
+						<h4 class="text-weight-normal showing">{{ t('Showing') }} 
 							<strong>{{ data.posts.first }}</strong>
-							to 
+							{{ t('to') }}
 							<strong>{{ data.posts.last }}</strong>
-							of 
+							{{ t('of') }}
 							<strong>{{ data.posts.total }}</strong>
-							posts.
+							{{ t('posts') }}.
 						</h4>
 					{% else %}
-						<h4 class="text-weight-normal showing">Showing {{ utils.plural(data.posts.results.length, "* post") }}.</h4>
+						<h4 class="text-weight-normal showing">{{ t('Showing') }} {{ utils.plural(data.posts.results.length, "* post") }}.</h4>
 					{% endif %}
 					<div class="blog">
 						{% for post in data.posts.results %}
@@ -88,18 +88,18 @@
 					{% endif %}
 				{% else %}
 					{% if data.category %}
-						<h3 class="text-muted">There are no posts in the category {{ data.category.name }}.</h3>
+						<h3 class="text-muted">{{ t('There are no posts in the category') }} {{ data.category.name }}.</h3>
 					{% else %}
-						<h3 class="text-muted">There are no posts yet.</h3>
+						<h3 class="text-muted">{{ t('There are no posts yet') }}.</h3>
 					{% endif %}
 				{% endif %}
 			{% endif %}
 		</div>
 		{% if data.categories.length %}
 		<div id="blog-categories">
-			<h2>Categories</h2>
+			<h2>{{ t('Categories') }}</h2>
 			<div class="category-list">
-				<a href="/blog" class="{% if not data.category %}active{% endif %} category">All Categories</a>
+				<a href="/blog" class="{% if not data.category %}active{% endif %} category">{{ t('All Categories') }}</a>
 				{% for cat in data.categories %}
 					<a href="/blog/{{ cat.key }}" class="{% if data.category and data.category.id == cat.id %}active{% endif %} category">{{ cat.name }}</a>
 				{% endfor %}

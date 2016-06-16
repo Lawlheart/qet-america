@@ -1,4 +1,5 @@
 var keystone = require('keystone');
+var i18next = require('i18next');
 
 exports = module.exports = function(req, res) {
 
@@ -8,5 +9,8 @@ exports = module.exports = function(req, res) {
 	// Set locals
 	locals.section = 'donate';
 
-	view.render('donate');
+	i18next.setDefaultNamespace('index');
+	i18next.loadNamespaces('index', function(err, t) {
+		view.render('donate');
+	});
 };

@@ -1,4 +1,5 @@
 var keystone = require('keystone');
+var i18next = require('i18next');
 var async = require('async');
 
 exports = module.exports = function(req, res) {
@@ -80,6 +81,9 @@ exports = module.exports = function(req, res) {
 		});
 		
 	});
-	view.render('blog');
+	i18next.setDefaultNamespace('index');
+	i18next.loadNamespaces('index', function(err, t) {
+		view.render('blog');
+	});
 	
 };
