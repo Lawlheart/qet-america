@@ -32,3 +32,9 @@ node_modules
 
 # Sass Caching
 .sass-cache
+
+# IDE Files
+.idea/
+
+# Docker
+Dockerfile
