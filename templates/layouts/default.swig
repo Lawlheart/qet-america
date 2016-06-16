@@ -63,22 +63,22 @@
 								{%- set linkClass = ' class="nav-link active"' -%}
 							{%- endif %}
 							<li{{ linkClass | safe }}>
-								<a href="{{ link.href }}">{{ link.label }}</a>
+								<a href="{{ link.href }}">{{ t(link.label) }}</a>
 							</li>
 						{%- endfor %}
 						{% if user -%}
-							<li id="js-navigation-admin" class="nav-link admin more"><a href="javascript:void(0)">Account</a>
+							<li id="js-navigation-admin" class="nav-link admin more"><a href="javascript:void(0)">{{ t('Account') }}</a>
 								<ul class="submenu">
 									{%- if user.canAccessKeystone -%}
-										<li><a href="/keystone">Open Keystone</a></li>
+										<li><a href="/keystone">{{ t('Open Keystone') }}</a></li>
 									{%- endif -%}
-									<li><a href="/keystone/signout">Sign Out</a></li>
+									<li><a href="/keystone/signout">{{ t('Sign Out') }}</a></li>
 								</ul>
 							</li>
 						{%- else -%}
-							<li class="nav-link pull-right"><a href="/keystone/signin">Sign In</a></li>
+							<li class="nav-link pull-right"><a href="/keystone/signin">{{ t('Sign In') }}</a></li>
 						{%- endif %}
-						<li id="js-navigation-lang" class="nav-link lang more"><a href="javascript:void(0)">Language</a>
+						<li id="js-navigation-lang" class="nav-link lang more"><a href="javascript:void(0)">{{ t('Language') }}</a>
 							<ul class="submenu">
 								<li><a href="/languages/es">Español</a></li>
 								<li><a href="/languages/en">English</a></li>

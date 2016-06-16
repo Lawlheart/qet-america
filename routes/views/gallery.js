@@ -1,4 +1,5 @@
 var keystone = require('keystone');
+var i18next = require('i18next');
 
 exports = module.exports = function(req, res) {
 	
@@ -11,7 +12,9 @@ exports = module.exports = function(req, res) {
 	// Load the galleries by sortOrder
 	view.query('galleries', keystone.list('Gallery').model.find().sort('sortOrder'));
 
-	// Render the view
-	view.render('gallery');
+	i18next.setDefaultNamespace('index');
+	i18next.loadNamespaces('index', function(err, t) {
+		view.render('gallery');
+	});
 	
 };

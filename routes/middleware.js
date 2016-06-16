@@ -100,4 +100,4 @@ exports.i18n = function (req, res, next) {
 		next();
 	});
 
-}
+};

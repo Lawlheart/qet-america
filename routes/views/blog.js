@@ -77,11 +77,12 @@ exports = module.exports = function(req, res) {
 		
 		q.exec(function(err, results) {
 			locals.data.posts = results;
+			console.log(locals);
 			next(err);
 		});
 		
 	});
-	
+	console.log(locals);
 	// Render the view
 	view.render('blog');
 	

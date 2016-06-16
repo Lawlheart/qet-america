@@ -6,7 +6,7 @@
 
 {% block intro %}
 	<div class="container">
-		<h1>Gallery</h1>
+		<h1>{{ t('Gallery') }}</h1>
 	</div>
 {% endblock %}
 
