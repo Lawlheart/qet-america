@@ -31,5 +31,16 @@ Page.add({
 // 	return this.content.extended || this.content.brief;
 // });
 
+Page.schema.methods.isPublished = function() {
+	return this.state == 'published';
+};
+ 
+Page.schema.pre('save', function(next) {
+	if (this.isPublished() && !this.publishedDate) {
+		this.publishedDate = new Date();
+	}
+	next();
+});
+
 Page.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
 Page.register();
