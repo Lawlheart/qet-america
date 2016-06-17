@@ -134,6 +134,8 @@ keystone.set('nav', {
 	'posts': ['posts', 'post-categories'],
 	'galleries': 'galleries',
 	'enquiries': 'enquiries',
+	'documents': 'documents',
+	'news': 'news',
 	'users': 'users'
 });
 

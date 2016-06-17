@@ -47,11 +47,10 @@
 							{# Document, if it exists #}
 							{% if data.post.docs.length %}
 								{% for data in data.post.docs %}
-									<p>Documents: <a href="{{ data.document.url }}" target="_blank">{{ data.document.filename }}</a></p>
+									<a class="button" href="{{ data.document.url }}" target="_blank">Open</a>
 									<div class="document-container" id='print'>
 										<iframe src="http://docs.google.com/viewer?url=https:{{ data.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
 									</div>
-								<button onClick="document.getElementById('print').print();"></button>
 								{% endfor %}
 							{% endif %}
 

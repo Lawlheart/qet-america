@@ -31,7 +31,3 @@ $(document).ready(function() {
 	});
 });
 
-	function printpdf(url) {
-		console.log(url);
-		window.open(url).print().close();
-	}

@@ -30,7 +30,7 @@ exports.initLocals = function(req, res, next) {
 		{ label: 'QET America',		key: 'home',		href: '/' },
 		{ label: 'Blog',					key: 'blog',		href: '/blog' },
 		{ label: 'Gallery',				key: 'gallery',	href: '/gallery' },
-		// { label: 'Contact',				key: 'contact',	href: '/contact' },
+		{ label: 'Contact',				key: 'contact',	href: '/contact' },
 		{ label: 'Donate', 				key: 'donate', 	href: '/donate'}
 	];
 

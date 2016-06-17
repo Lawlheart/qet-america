@@ -2,14 +2,16 @@
 
 {% block intro %}
 	<div class="container">
-		<h1>Contact Us</h1>
 	</div>
 {% endblock %}
 
 {% block content %}
-	<div class="container">
+	<div id="contact" class="container">
 		{% if enquirySubmitted %}
-			<h3>Thanks for getting in touch.</h3>
+			<div class="thanks">
+				<h1>Contact Us</h1>
+				<h3>Thanks for getting in touch.</h3>
+			</div>
 		{% else %}
 			<div class="row">
 				<div class="col-sm-8 col-md-6">

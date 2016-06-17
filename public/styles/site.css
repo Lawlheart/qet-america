@@ -58,7 +58,7 @@ header.navigation .logo {
 
 #body {
   margin-top: 20px;
-  min-height: 100%;
+  min-height: 400px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -639,6 +639,14 @@ article .video-frame {
   width: 100%;
   max-width: 1000px;
   margin: 20px auto; }
+
+#contact .thanks {
+  text-align: center; }
+
+#contact input {
+  background-color: #121418;
+  border: 1px solid #050505;
+  color: #fff; }
 
 .gallery-date::after {
   clear: both;
