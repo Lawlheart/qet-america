@@ -46,11 +46,11 @@
 
 							{# Document, if it exists #}
 							{% if data.post.docs.length %}
-								{% for data in data.post.docs %}
-									<a class="button" href="{{ data.document.url }}" target="_blank">Open</a>
+								{% for doc in data.post.docs %}
+									<a class="button" href="{{ doc.document.url }}" target="_blank">Open</a>
 									<div class="document-container" id='print'>
-										<iframe src="https://docs.google.com/viewer?url=https:{{ data.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
-										{{ data.document | json }}
+										<iframe src="https://docs.google.com/viewer?url=https:{{ doc.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
+										{{ doc | json }}
 									</div>
 								{% endfor %}
 							{% endif %}
