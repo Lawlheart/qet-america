@@ -49,7 +49,7 @@
 								{% for data in data.post.docs %}
 									<a class="button" href="{{ data.document.url }}" target="_blank">Open</a>
 									<div class="document-container" id='print'>
-										<iframe src="http://docs.google.com/viewer?url=https:{{ data.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
+										<iframe src="https://docs.google.com/viewer?url=https:{{ data.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
 									</div>
 								{% endfor %}
 							{% endif %}
@@ -75,7 +75,7 @@
 {% block meta %}
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="QET America | {{ data.post.title }}">
-	<meta property="og:url" content="http://qet-america.herokuapp.com/blog/post/{{ data.post.slug }}" />
+	<meta property="og:url" content="https://qet-america.herokuapp.com/blog/post/{{ data.post.slug }}" />
 	<meta property="og:description"   content="{{ data.post.content.brief | striptags | replace('^(.{200,200})(.*)', '$1') }}" />
 
 	<meta name="twitter:card" content="summary_large_image">
