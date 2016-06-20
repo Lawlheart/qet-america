@@ -41,7 +41,7 @@
 			{% for article in news %}
 				<article class="type-system-rounded">
 					<p class="date">{{ article.publishedDate | date('d M Y') }}</p>
-					<h2>{{ article.headline }}</h2>
+					<h2>{{ article.title }}</h2>
 					<img src="{{ article.image.url }}" alt="">
 					<p>{{ article.content.brief | striptags | safe }}
 						<a href="javascript:void(0)" class="read-more">{{ t('Read More') }} <span>&rsaquo;</span></a>

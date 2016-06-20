@@ -538,7 +538,8 @@ article.type-system-rounded, .article.type-system-rounded {
       margin: 0 0 16px 16px; } }
 
 .post {
-  position: relative; }
+  position: relative;
+  overflow: auto; }
   @media screen and (min-width: 993px) {
     .post .lead {
       position: absolute;

@@ -31,6 +31,7 @@
 
 .post {
   position: relative;
+  overflow: auto;
   @media screen and (min-width: $screen-medium) {
     .lead {
       position: absolute;
