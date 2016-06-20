@@ -16,7 +16,7 @@ Post.add({
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	author: { type: Types.Relationship, ref: 'User', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
-	image: { type: Types.CloudinaryImage },
+	image: { type: Types.CloudinaryImage, autoCleanup : true},
 	docs: { type: Types.Relationship, ref: 'Document',  label: 'Documents', many: true },
 	video: { type: Types.Embedly, from: 'videoUrl'},
 	videoUrl: { type: Types.Url },
