@@ -50,7 +50,6 @@
 									<a class="button" href="{{ doc.document.url }}" target="_blank">Open</a>
 									<div class="document-container" id='print'>
 										<iframe src="https://docs.google.com/viewer?url=https:{{ doc.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
-										{{ doc | json }}
 									</div>
 								{% endfor %}
 							{% endif %}

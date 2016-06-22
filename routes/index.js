@@ -43,4 +43,5 @@ exports = module.exports = function(app) {
 	app.all('/contact', routes.views.contact);
 	app.get('/documents', routes.views.documents);
 	app.get('/donate', routes.views.donate);
+	app.get('/enquiries', middleware.requireUser, routes.views.enquiry);
 };

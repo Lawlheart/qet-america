@@ -1,0 +1,26 @@
+#documents {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  .document {
+	list-style: none;
+	position: relative;
+	width: 320px;
+	height: 400px;
+	margin: 20px;
+  }
+  .document-container {
+	width: 280px;
+	height: 260px;
+  }
+  .document-open {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+  }
+  h4 {
+	margin: 0;
+  }
+}

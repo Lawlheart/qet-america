@@ -71,7 +71,7 @@ header.navigation .logo {
     height: auto;
 }
 
-a.button {
+a.button, button.button {
   cursor: pointer;
   font-family: $button-font;
   background: $button-background;
@@ -111,7 +111,7 @@ a.button {
 	margin: -20px -20px 20px;
 	padding: 10px 20px;
 	background-color: $green;
-	h1 {
+	h1, h3, h5 {
 	  margin: 0;
 	  a {
 		color: #fff;

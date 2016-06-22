@@ -1,15 +1,15 @@
 {% extends "../layouts/default.swig" %}
 
 {% block intro %}
-	<div class="container">
-	</div>
 {% endblock %}
 
 {% block content %}
-	<div id="contact" class="container">
+	<div id="contact" class="card">
+		<div class="titlebar">
+			<h1>{{ t('Concact QET') }}</h1>
+		</div>
 		{% if enquirySubmitted %}
 			<div class="thanks">
-				<h1>Contact Us</h1>
 				<h3>Thanks for getting in touch.</h3>
 			</div>
 		{% else %}
@@ -74,7 +74,7 @@
 							</label>
 						</div>
 						<div class="form-actions">
-							<button type="submit" class="btn btn-primary">Send</button>
+							<button type="submit" class="button">Send</button>
 						</div>
 					</form>
 				</div>
