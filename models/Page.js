@@ -42,5 +42,14 @@ Page.schema.pre('save', function(next) {
 	next();
 });
 
+// updates the navigation menu after saving or removing a page
+Page.schema.post('save', function(next) {
+	keystone.get('updateNavigation')();
+});
+
+Page.schema.post('remove', function(next) {
+	keystone.get('updateNavigation')();
+});
+
 Page.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
 Page.register();

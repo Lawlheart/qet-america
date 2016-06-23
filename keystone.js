@@ -138,6 +138,40 @@ keystone.set('nav', {
 	'users': 'users'
 });
 
+var navLinks = [
+	{ label: 'QET America',		key: 'home',		href: '/' },
+	{ label: 'Blog',					key: 'blog',		href: '/blog' },
+	{ label: 'Gallery',				key: 'gallery',	href: '/gallery' },
+	// { label: 'Contact',				key: 'contact',	href: '/contact' },
+	{ label: 'Donate', 				key: 'donate', 	href: '/donate'}
+];
+
+var updateNavigation = function() {
+	keystone.list('Page').model.find({state: 'published'}, function(err, pages) {
+		var newLinks = navLinks.slice();
+		pages.forEach(function(page) {
+			var exists = newLinks.some(function(el) {
+				return el.key === page.slug;
+			});
+			// add the page only if it's not present in the current navigation
+			if (!exists) {
+				newLinks.push({
+					label: page.title,
+					key: page.slug,
+					href: '/' + page.slug
+				});
+			}
+		});
+		keystone.set('navLinks', newLinks);
+		console.log(keystone.get('navLinks'));
+	});
+};
+
+updateNavigation();
+
+// keystone.set('navLinks', navLinks);
+keystone.set('updateNavigation', updateNavigation);
+
 // Start Keystone to connect to your database and initialise the web server
 
 keystone.start();
