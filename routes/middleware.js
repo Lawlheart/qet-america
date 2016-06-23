@@ -13,6 +13,9 @@ var _ = require('underscore');
 var i18next = require('i18next');
 var Backend = require('i18next-node-fs-backend');
 var path = require('path');
+var keystone = require('keystone');
+
+
 
 /**
 	Initialises the standard view locals
@@ -34,6 +37,25 @@ exports.initLocals = function(req, res, next) {
 		{ label: 'Contact',				key: 'contact',		href: '/contact' },
 		{ label: 'Donate', 				key: 'donate', 		href: '/donate'}
 	];
+
+	keystone.list('Page').model.find({state: 'published'}, function(err, pages) {
+		pages.forEach(function(page, i) {
+			locals.navLinks.push({
+				label: page.title,
+				key: page.slug,
+				href: '/' + page.slug
+			});
+			// var navLink = _.findWhere(keystone.get('navigation'), {
+			// 	key: page.parent
+			// });
+			// if (i === 0) navLink.children = [];
+			// navLink.children.push({
+			// 	label: page.title,
+			// 	key: page.slug,
+			// 	href: '/' + page.parent + '/' + page.slug
+			// });
+		});
+	});
 
 	locals.user = req.user;
 
