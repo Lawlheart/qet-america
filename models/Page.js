@@ -14,12 +14,20 @@ var Page = new keystone.List('Page', {
 Page.add({
 	title: { type: String, required: true, note: 'Keep it short' },
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
-	author: { type: Types.Relationship, ref: 'User', index: true },
+	// author: { type: Types.Relationship, ref: 'User', index: true },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
 
 	//create a dropdown with templates
 	// template: { type: Types.Select, options: 'page, about, team, contact, portfolio', default: 'page'},
 	image: { type: Types.CloudinaryImage },
+	docs: { type: Types.Relationship, ref: 'Document',  label: 'Documents', many: true },
+	video: { type: Types.Embedly, from: 'videoUrl'},
+	videoUrl: { type: Types.Url },
+	language: { type: Types.Select, options: [
+			{ value: 'en', label: 'English' }, 
+			{ value: 'es', label: 'Español' }
+		], default: 'en' },
+
 	content: {
 		type: Types.Html, wysiwyg: true, height: 400
 		// brief: { type: Types.Html, wysiwyg: true, height: 150 },

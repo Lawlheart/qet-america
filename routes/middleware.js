@@ -94,6 +94,7 @@ exports.i18n = function (req, res, next) {
 		}
 	}, function(err, t) {
 		res.locals.t = t;
+		res.locals.lang = req.language;
 		next();
 	});
 

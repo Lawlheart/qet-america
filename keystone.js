@@ -159,7 +159,8 @@ var updateNavigation = function() {
 				newLinks.push({
 					label: page.title,
 					key: page.slug,
-					href: '/' + page.slug
+					href: '/' + page.slug,
+					language: page.language
 				});
 			}
 		});
