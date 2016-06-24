@@ -31,33 +31,6 @@ exports.initLocals = function(req, res, next) {
 
 	locals.navLinks = keystone.get('navLinks');
 
-	// locals.navLinks = [
-	// 	{ label: 'QET America',		key: 'home',		href: '/' },
-	// 	{ label: 'Blog',					key: 'blog',		href: '/blog' },
-	// 	{ label: 'Gallery',				key: 'gallery',	href: '/gallery' },
-	// 	// { label: 'Contact',				key: 'contact',	href: '/contact' },
-	// 	{ label: 'Donate', 				key: 'donate', 	href: '/donate'}
-	// ];
-
-	// keystone.list('Page').model.find({state: 'published'}, function(err, pages) {
-	// 	pages.forEach(function(page, i) {
-	// 		locals.navLinks.push({
-	// 			label: page.title,
-	// 			key: page.slug,
-	// 			href: '/' + page.slug
-	// 		});
-	// 		// var navLink = _.findWhere(keystone.get('navigation'), {
-	// 		// 	key: page.parent
-	// 		// });
-	// 		// if (i === 0) navLink.children = [];
-	// 		// navLink.children.push({
-	// 		// 	label: page.title,
-	// 		// 	key: page.slug,
-	// 		// 	href: '/' + page.parent + '/' + page.slug
-	// 		// });
-	// 	});
-	// });
-
 	locals.user = req.user;
 
 	next();

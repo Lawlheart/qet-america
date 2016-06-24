@@ -163,7 +163,6 @@ var updateNavigation = function() {
 			}
 		});
 		keystone.set('navLinks', newLinks);
-		console.log(keystone.get('navLinks'));
 	});
 };
 
