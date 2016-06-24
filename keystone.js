@@ -139,11 +139,12 @@ keystone.set('nav', {
 });
 
 var navLinks = [
-	{ label: 'QET America',		key: 'home',		href: '/' },
-	{ label: 'Blog',					key: 'blog',		href: '/blog' },
-	{ label: 'Gallery',				key: 'gallery',	href: '/gallery' },
-	// { label: 'Contact',				key: 'contact',	href: '/contact' },
-	{ label: 'Donate', 				key: 'donate', 	href: '/donate'}
+	{ label: 'QET America', key: 'home', href: '/' },
+	{ label: 'Blog', key: 'blog', href: '/blog' },
+	{ label: 'Gallery', key: 'gallery', href: '/gallery' },
+	{ label: 'Documents', key: 'documents', href: '/documents' },
+	{ label: 'Contact', key: 'contact', href: '/contact' },
+	{ label: 'Donate', key: 'donate', href: '/donate' }
 ];
 
 var updateNavigation = function() {
