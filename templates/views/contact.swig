@@ -6,7 +6,7 @@
 {% block content %}
 	<div id="contact" class="card">
 		<div class="titlebar">
-			<h1>{{ t('Concact QET') }}</h1>
+			<h1>{{ t('Contact QET') }}</h1>
 		</div>
 		{% if enquirySubmitted %}
 			<div class="thanks">
