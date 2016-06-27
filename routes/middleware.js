@@ -73,6 +73,18 @@ exports.requireUser = function(req, res, next) {
 
 };
 
+
+exports.requireSuperUser = function(req, res, next) {
+
+	if (!req.user || !user.canAccessKeystone) {
+		req.flash('error', 'Please sign in to access this page.');
+		res.redirect('/keystone/signin');
+	} else {
+		next();
+	}
+
+};
+
 // Adds static multilanguage feature
 exports.i18n = function (req, res, next) {
 	var baseDir = path.resolve('./locales');

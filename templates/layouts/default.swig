@@ -10,7 +10,19 @@
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 
-		{% block meta %}{% endblock %}
+		{% block meta %}
+			<meta property="og:type" content="website" />
+			<meta property="og:title" content="QET America">
+			<meta property="og:url" content="https://qet-america.herokuapp.com" />
+			<meta property="og:description" content="" />
+			<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.jpg" />
+
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:title" content="QET America">
+			<meta name="twitter:description" content="">
+			<meta name="twitter:image:src" content="http://qet-america.herokuapp.com/images/default.jpg">
+
+		{% endblock %}
 		<meta name="twitter:domain" content="qet-america.herokuapp.com">
 		<meta name="fb:app_id" content="185694088491162">
 		
@@ -49,10 +61,10 @@
 	<body>
 	
 		{# NAVBAR #}
-		<header class="navigation" role="banner">
+		<header class="navigation shadow-2" role="banner">
 			<div class="navigation-wrapper">
 				<a href="/" class="logo">
-					<img class="icon" src="/images/qet.png" alt="QET Icon">
+					<img class="icon" src="/images/qet-logo-white.png" alt="QET Icon">
 				</a>
 				<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
 				<nav role="navigation">
@@ -73,6 +85,7 @@
 								<ul class="submenu">
 									{%- if user.canAccessKeystone -%}
 										<li><a href="/keystone">{{ t('Open Keystone') }}</a></li>
+										<li><a href="/enquiries">{{ t('Enquiries') }}</a></li>
 									{%- endif -%}
 									<li><a href="/keystone/signout">{{ t('Sign Out') }}</a></li>
 								</ul>
@@ -92,7 +105,7 @@
 		</header>
 		
 		{# DONATE BANNER #}
-		<div class="donate-bar" role="banner">
+		<div class="donate-bar shadow-2" role="banner">
 			<div class="content">
 				<h1>{{ t('Support QET America') }}</h1>
 				<a class="button cta" target="_blank" href="http://qetamerica.org/product/buena-vistas-select-bean-blend-1lb/">{{ t('Buy Coffee') }}</a>
@@ -117,9 +130,9 @@
 		</div>
 
 		{# FOOTER #}
-		<footer class="footer" role="contentinfo">
+		<footer class="footer shadow-2" role="contentinfo">
 			<div class="footer-logo">
-				<img class="icon" src="/images/qet.png" alt="QET Icon">
+				<img class="icon" src="/images/qet-logo-white.png" alt="QET Icon">
 			</div>
 			<div class="footer-links">
 				<ul>
@@ -143,7 +156,6 @@
 			</div>
 			<hr>
 			<p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>
-			<p>Sustainability Icon by Lemon Liu from the Noun Project</p>
 		</footer>
 
 		<script src="/js/jquery/jquery-2.1.4.min.js"></script>

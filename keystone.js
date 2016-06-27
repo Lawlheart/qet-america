@@ -135,11 +135,12 @@ keystone.set('nav', {
 	'courses': ['courses', 'steps'],
 	'materials': ['documents', 'galleries'],
 	'enquiries': 'enquiries',
+	'pages': 'pages',
 	'users': 'users'
 });
 
 var navLinks = [
-	{ label: 'QET America', key: 'home', href: '/' },
+	{ label: 'Home', key: 'home', href: '/' },
 	{ label: 'Blog', key: 'blog', href: '/blog' },
 	{ label: 'Gallery', key: 'gallery', href: '/gallery' },
 	{ label: 'Documents', key: 'documents', href: '/documents' },

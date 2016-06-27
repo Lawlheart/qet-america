@@ -27,7 +27,6 @@ header.navigation .logo {
   height: 60px; }
   header.navigation .logo img {
     height: 48px;
-    width: 48px;
     padding: 0;
     margin-top: 6px; }
 
@@ -98,6 +97,9 @@ a.button, button.button {
     border-color: #162A56;
     background-color: #304574;
     font-size: 22px; }
+  a.button.delete, button.button.delete {
+    background-color: #E51300;
+    border-color: #b20f00; }
 
 .card {
   background-color: #3e4551;
@@ -115,6 +117,25 @@ a.button, button.button {
         color: #fff; }
         .card .titlebar h1 a:hover, .card .titlebar h3 a:hover, .card .titlebar h5 a:hover {
           color: rgba(255, 255, 255, 0.7); }
+
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.shadow-1:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-3, .card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 header.navigation {
   background-color: #014701;
@@ -802,13 +823,80 @@ article .video-frame {
   #documents h4 {
     margin: 0; }
 
-.enquiry-details {
-  margin: 0; }
+#enquiries .card {
+  overflow: auto;
+  position: relative; }
 
-.enquiry-label {
-  display: inline-block;
-  width: 120px; }
+#enquiries .content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #enquiries .content::after {
+    clear: both;
+    content: "";
+    display: table; }
 
-.enquiry-message-label {
-  margin: 10px 0 0;
-  color: #014701; }
+#enquiries h4 {
+  color: #a3aab9;
+  margin: 0 0 12px; }
+
+#enquiries .details {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-bottom: 20px; }
+  #enquiries .details:last-child {
+    margin-right: 0; }
+  #enquiries .details p {
+    margin: 6px 0; }
+  #enquiries .details span {
+    display: inline-block;
+    width: 50px;
+    color: #6a758b; }
+
+#enquiries button {
+  position: absolute;
+  bottom: 20px;
+  right: 40px; }
+
+#enquiries .message {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-bottom: 20px; }
+  #enquiries .message:last-child {
+    margin-right: 0; }
+
+@media screen and (max-width: 993px) {
+  #enquiries .details {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    #enquiries .details:last-child {
+      margin-right: 0; }
+  #enquiries .message {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    #enquiries .message:last-child {
+      margin-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  #enquiries .details {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #enquiries .details:last-child {
+      margin-right: 0; }
+  #enquiries .message {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    #enquiries .message:last-child {
+      margin-right: 0; } }

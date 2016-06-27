@@ -24,7 +24,6 @@ header.navigation .logo {
   height: 60px;
   img {
 	height: 48px;
-	width: 48px;
 	padding: 0;
 	margin-top: 6px;
   }
@@ -97,10 +96,15 @@ a.button, button.button {
 	background-color: $lighter-blue;
 	font-size: $font-size-large;
   }
+  &.delete {
+	background-color: #E51300;
+	border-color: darken(#E51300, 10%);
+  }
 }
 
 
 .card {
+  @extend .shadow-3;
   background-color: $light-gray;
   padding: 20px;
   margin-bottom: 20px;

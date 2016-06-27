@@ -43,8 +43,14 @@ exports = module.exports = function(app) {
 	app.all('/contact', routes.views.contact);
 	app.get('/documents', routes.views.documents);
 	app.get('/donate', routes.views.donate);
-	app.get('/enquiries', middleware.requireUser, routes.views.enquiry);
-
+	app.get('/enquiries', middleware.requireSuperUser, routes.views.enquiry);
+	app.delete('/enquiries/:enquiry', middleware.requireSuperUser, function(req, res) {
+		keystone.list('Enquiry').model.findById(req.params.enquiry)
+		.remove(function(err) {
+			if(err) res.status(404).json({error: "not found"});
+			else res.send("DELETED");
+		});
+	});
 	// app.get('/:parent/:slug?', routes.views.page);
 	app.get('/:slug', routes.views.page);
 };
