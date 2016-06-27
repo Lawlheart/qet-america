@@ -2,6 +2,8 @@
 
 {% import "../mixins/macros.swig" as Macros %}
 
+{% block title %} QET America{% if data.post %} | {{ data.post.title }}{% endif %}{% endblock %}
+
 {% block content %}
 	{# For testing purposes #}
 	{# <pre>{{ data.post | json }}</pre> #}
@@ -47,10 +49,12 @@
 							{# Document, if it exists #}
 							{% if data.post.docs.length %}
 								{% for doc in data.post.docs %}
-									<a class="button" href="{{ doc.document.url }}" target="_blank">Open</a>
 									<div class="document-container" id='print'>
 										<iframe src="https://docs.google.com/viewer?url=https:{{ doc.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
+										<a href="{{ doc.document.url }}" class="button document-download" download>Download</a>
+										<a href="{{ doc.document.url }}" class="button document-open" target="_blank">Open</a>
 									</div>
+									
 								{% endfor %}
 							{% endif %}
 
@@ -80,11 +84,8 @@
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="QET America | {{data.post.title}}">
-	<meta name="twitter:description" content="{{ data.post.content.brief | striptags | replace('^(.{200,200})(.*)', '$1') }}"> 
-	{# <meta name="twitter:site" content="@site_username"> #}
-	{# <meta name="twitter:creator" content="@creator_username"> #}
-
-
+	<meta name="twitter:description" content="{{ data.post.content.brief | striptags | replace('^(.{200,200})(.*)', '$1') }}">
+	
 	{% if data.post.video.exists %}
 		<meta property="og:image" content="{{ data.post.video.thumbnailUrl }}" />
 		<meta name="twitter:image:src" content="{{ data.post.video.thumbnailUrl }}">

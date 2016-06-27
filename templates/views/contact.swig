@@ -1,7 +1,7 @@
 {% extends "../layouts/default.swig" %}
 
-{% block intro %}
-{% endblock %}
+
+{% block title %}QET America | Contact {% endblock %}
 
 {% block content %}
 	<div id="contact" class="card">

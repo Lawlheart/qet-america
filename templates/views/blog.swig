@@ -2,6 +2,9 @@
 
 {% import "../mixins/macros.swig" as Macros %}
 
+{% block title %}QET America | Blog {% endblock %}
+
+
 {% macro showPost(post) %}
 	<div class="post card" data-ks-editable="editable(user, { list: 'Post', id: post.id })">
 		<div class="titlebar">

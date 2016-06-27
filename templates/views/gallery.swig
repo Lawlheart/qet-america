@@ -1,5 +1,8 @@
 {% extends "../layouts/default.swig" %}
 
+{% block title %}QET America | Gallery {% endblock %}
+
+
 {% block css %}
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.swipebox/1.4.4/css/swipebox.css">
 {% endblock %}

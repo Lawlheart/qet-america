@@ -1,18 +1,6 @@
 {% extends "../layouts/default.swig" %}
 
-{# Document Schema {
-	id
-	slug
-	title
-	document {
-		filename
-		originalname
-		path
-		size
-		filetype
-		url		
-	}
-} #}
+{% block title %}QET America | Documents {% endblock %}
 
 {% block intro %}
   <div class="container">

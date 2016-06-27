@@ -2,6 +2,8 @@
 
 {% import "../mixins/macros.swig" as Macros %}
 
+{% block title %}QET America{% if page %} | {{ page.title }}{% endif %} {% endblock %}
+
 {% block content %}
 	{# For testing purposes #}
 	{# <pre>{{ page | json }}</pre> #}
@@ -70,11 +72,8 @@
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="QET America | {{page.title}}">
-	<meta name="twitter:description" content="{{ page.content | striptags | replace('^(.{200,200})(.*)', '$1') }}"> 
-	{# <meta name="twitter:site" content="@site_username"> #}
-	{# <meta name="twitter:creator" content="@creator_username"> #}
-
-
+	<meta name="twitter:description" content="{{ page.content | striptags | replace('^(.{200,200})(.*)', '$1') }}">
+	
 	{% if page.video.exists %}
 		<meta property="og:image" content="{{ page.video.thumbnailUrl }}" />
 		<meta name="twitter:image:src" content="{{ page.video.thumbnailUrl }}">

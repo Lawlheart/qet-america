@@ -1,5 +1,6 @@
 {% extends "../layouts/default.swig" %}
 
+{% block title %}QET America | Donate {% endblock %}
 
 {% block content %}
 	<div class="card">

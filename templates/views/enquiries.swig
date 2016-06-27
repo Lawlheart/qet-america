@@ -1,5 +1,7 @@
 {% extends "../layouts/default.swig" %}
 
+{% block title %}QET America | Enquiries {% endblock %}
+
 {% block content %}
 	<div id="enquiries">
 		{% if enquiries.length %}

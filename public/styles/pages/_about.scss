@@ -1,0 +1,36 @@
+#users {
+  @include outer-container;
+}
+
+.card.user {
+  @include span-columns(4);
+  
+  img.avatar {
+	height: 100px;
+	width: 100px;
+	float: left;
+	margin: 0 12px 0 0;
+  }
+  h4 {
+	color: lighten($light-gray, 40%);
+	margin: 0;
+  }
+  p {
+	margin-top: 0;
+  }
+  .twitter {
+	float: right;
+	a {
+	  color: #fff;
+	}
+  }
+
+  @media screen and (max-width: $screen-medium) {
+	  @include span-columns(6);
+  }  
+  @media screen and (max-width: $screen-small) {
+	@include span-columns(12);
+  }
+  
+}
+

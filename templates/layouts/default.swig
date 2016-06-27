@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>{{ title|default("QET America") }}</title>
+		<title>{% block title %}{{ title|default("QET America") }}{% endblock %}</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
 
@@ -25,10 +25,10 @@
 		{% endblock %}
 		<meta name="twitter:domain" content="qet-america.herokuapp.com">
 		<meta name="fb:app_id" content="185694088491162">
-		
-		<link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-		<link href='//fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		{# <meta name="twitter:site" content="@site_username"> #}
+		{# <meta name="twitter:creator" content="@creator_username"> #}
+
+		<link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700|Varela+Round|Montserrat' rel='stylesheet' type='text/css'>
 
 		{# Customise the stylesheet for your site by editing /public/styles/site.sass #}
 		<link href="/styles/site.css" rel="stylesheet">
@@ -140,6 +140,8 @@
 					<li><a href="/">{{ t('Home') }}</a></li>
 					<li><a href="/blog">Blog</a></li>
 					<li><a href="/gallery">{{ t('Gallery') }}</a></li>
+					<li><a href="/documents">{{ t('Documents') }}</a></li>
+					<li><a href="/contact">{{ t('Contact') }}</a></li>
 					<li><a href="/donate">{{ t('Donate') }}</a></li>
 				</ul>
 				<ul>

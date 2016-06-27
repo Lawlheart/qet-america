@@ -6,7 +6,9 @@ var Types = keystone.Field.Types;
  * ==========
  */
 
-var User = new keystone.List('User');
+var User = new keystone.List('User', {
+	track: true
+});
 
 User.add({
 	name: {type: Types.Name, required: true, index: true},
@@ -17,7 +19,8 @@ User.add({
 	bio: {type: Types.Html, wysiwyg: true, height: 150},
 	twitter: {type: String}
 }, 'Permissions', {
-	isAdmin: { type: Boolean, label: 'Can access Keystone', index: true }
+	isAdmin: { type: Boolean, label: 'Can access Keystone', index: true },
+	isPublic: {type: Boolean, label: 'Show user on About page', index: true}
 });
 
 // Provide access to Keystone

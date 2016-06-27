@@ -104,7 +104,8 @@ a.button, button.button {
 .card {
   background-color: #3e4551;
   padding: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  overflow: auto; }
   .card img {
     max-width: 100%; }
   .card .titlebar {
@@ -635,6 +636,8 @@ select {
 .post {
   position: relative;
   overflow: auto; }
+  .post img {
+    margin-left: 20px; }
   @media screen and (min-width: 993px) {
     .post .lead {
       position: absolute;
@@ -730,18 +733,33 @@ article .video-frame {
     #post .card .titlebar {
       margin-bottom: 60px; } }
 
+#post p {
+  margin: 16px; }
+
 #post .document-container {
+  position: relative;
   height: 400px;
   width: 100%;
   max-width: 1000px;
   margin: 20px auto; }
+  #post .document-container .document-open {
+    position: absolute;
+    right: 20px;
+    bottom: 20px; }
+  #post .document-container .document-download {
+    background-color: #0E4D4D;
+    position: absolute;
+    right: 100px;
+    bottom: 20px; }
+    #post .document-container .document-download:hover {
+      background-color: #1a8e8e; }
 
 #contact .thanks {
   text-align: center; }
 
 #contact input, #contact select, #contact textarea {
-  background-color: #121418;
-  border: 1px solid #050505;
+  background-color: #222428;
+  border: 1px solid #121418;
   color: #fff; }
 
 .gallery-date::after {
@@ -900,3 +918,50 @@ article .video-frame {
     width: 100%; }
     #enquiries .message:last-child {
       margin-right: 0; } }
+
+#users {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #users::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.card.user {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .card.user:last-child {
+    margin-right: 0; }
+  .card.user img.avatar {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 0 12px 0 0; }
+  .card.user h4 {
+    color: #a3aab9;
+    margin: 0; }
+  .card.user p {
+    margin-top: 0; }
+  .card.user .twitter {
+    float: right; }
+    .card.user .twitter a {
+      color: #fff; }
+  @media screen and (max-width: 993px) {
+    .card.user {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .card.user:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    .card.user {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .card.user:last-child {
+        margin-right: 0; } }

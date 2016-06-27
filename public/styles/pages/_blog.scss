@@ -32,6 +32,9 @@
 .post {
   position: relative;
   overflow: auto;
+  img {
+	margin-left:20px;
+  }
   @media screen and (min-width: $screen-medium) {
     .lead {
       position: absolute;

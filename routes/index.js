@@ -43,6 +43,7 @@ exports = module.exports = function(app) {
 	app.all('/contact', routes.views.contact);
 	app.get('/documents', routes.views.documents);
 	app.get('/donate', routes.views.donate);
+	app.get('/about', routes.views.about);
 	app.get('/enquiries', middleware.requireSuperUser, routes.views.enquiry);
 	app.delete('/enquiries/:enquiry', middleware.requireSuperUser, function(req, res) {
 		keystone.list('Enquiry').model.findById(req.params.enquiry)
