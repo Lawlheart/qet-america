@@ -15,12 +15,12 @@
 			<meta property="og:title" content="QET America">
 			<meta property="og:url" content="https://qet-america.herokuapp.com" />
 			<meta property="og:description" content="" />
-			<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.jpg" />
+			<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.png" />
 
 			<meta name="twitter:card" content="summary_large_image">
 			<meta name="twitter:title" content="QET America">
 			<meta name="twitter:description" content="">
-			<meta name="twitter:image:src" content="http://qet-america.herokuapp.com/images/default.jpg">
+			<meta name="twitter:image:src" content="http://qet-america.herokuapp.com/images/default.png">
 
 		{% endblock %}
 		<meta name="twitter:domain" content="qet-america.herokuapp.com">

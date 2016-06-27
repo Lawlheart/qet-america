@@ -82,8 +82,8 @@
 		<meta property="og:image" content="{{ page._.image.fit(750,450) }}" />
 		<meta name="twitter:image:src" content="{{ page._.image.fit(750,450) }}">
 	{% else %}
-		<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.jpg" />
-		<meta name="twitter:image:src" content="http://qet-america.herokuapp.com/images/default.jpg">
+		<meta property="og:image" content="http://qet-america.herokuapp.com/images/default.png" />
+		<meta name="twitter:image:src" content="http://qet-america.herokuapp.com/images/default.png">
 	{% endif %}
 	
 {% endblock %}
