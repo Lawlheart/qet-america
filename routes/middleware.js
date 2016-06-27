@@ -13,6 +13,9 @@ var _ = require('underscore');
 var i18next = require('i18next');
 var Backend = require('i18next-node-fs-backend');
 var path = require('path');
+var keystone = require('keystone');
+
+
 
 /**
 	Initialises the standard view locals
@@ -26,14 +29,7 @@ exports.initLocals = function(req, res, next) {
 
 	var locals = res.locals;
 
-	locals.navLinks = [
-		{ label: 'QET America',		key: 'home',			href: '/' },
-		{ label: 'Blog',					key: 'blog',			href: '/blog' },
-		{ label: 'Gallery',				key: 'gallery',		href: '/gallery' },
-		{ label: 'Documents',			key: 'documents',	href: '/documents' },
-		{ label: 'Contact',				key: 'contact',		href: '/contact' },
-		{ label: 'Donate', 				key: 'donate', 		href: '/donate'}
-	];
+	locals.navLinks = keystone.get('navLinks');
 
 	locals.user = req.user;
 
@@ -98,6 +94,7 @@ exports.i18n = function (req, res, next) {
 		}
 	}, function(err, t) {
 		res.locals.t = t;
+		res.locals.lang = req.language;
 		next();
 	});
 

@@ -58,6 +58,7 @@
 				<nav role="navigation">
 					<ul id="js-navigation-menu" class="navigation-menu show">
 						{%- for link in navLinks -%}
+						{%- if link.language == lang || !link.language %}
 							{%- set linkClass = ' class="nav-link"' -%}
 							{%- if link.key == section -%}
 								{%- set linkClass = ' class="nav-link active"' -%}
@@ -65,6 +66,7 @@
 							<li{{ linkClass | safe }}>
 								<a href="{{ link.href }}">{{ t(link.label) }}</a>
 							</li>
+						{%- endif %}
 						{%- endfor %}
 						{% if user -%}
 							<li id="js-navigation-admin" class="nav-link admin more"><a href="javascript:void(0)">{{ t('Account') }}</a>
