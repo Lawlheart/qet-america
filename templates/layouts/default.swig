@@ -137,12 +137,15 @@
 			<div class="footer-links">
 				<ul>
 					<li><h3>QET America</h3></li>
-					<li><a href="/">{{ t('Home') }}</a></li>
+					<li><a href="/about">{{ t('About Us') }}</a></li>
+					<li><a href="/contact">{{ t('Contact') }}</a></li>
+					<li><a href="/donate">{{ t('Donate') }}</a></li>
+				</ul>
+				<ul>
+					<li><h3>{{ t('Resources') }}</h3></li>
 					<li><a href="/blog">Blog</a></li>
 					<li><a href="/gallery">{{ t('Gallery') }}</a></li>
 					<li><a href="/documents">{{ t('Documents') }}</a></li>
-					<li><a href="/contact">{{ t('Contact') }}</a></li>
-					<li><a href="/donate">{{ t('Donate') }}</a></li>
 				</ul>
 				<ul>
 					<li><h3>{{ t('Follow Us') }}</h3></li>
@@ -150,11 +153,12 @@
 					<li><a href="javascript:void(0)">Twitter</a></li>
 					<li><a href="javascript:void(0)">YouTube</a></li>
 				</ul>
-				<ul>
-					<li><h3>Legal</h3></li>
-					<li><a href="javascript:void(0)">Terms and Conditions</a></li>
-					<li><a href="javascript:void(0)">Privacy Policy</a></li>
-				</ul>
+				
+				{#<ul>#}
+					{#<li><h3>Legal</h3></li>#}
+					{#<li><a href="javascript:void(0)">Terms and Conditions</a></li>#}
+					{#<li><a href="javascript:void(0)">Privacy Policy</a></li>#}
+				{#</ul>#}
 			</div>
 			<hr>
 			<p>Disclaimer area lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, nostrum repudiandae saepe.</p>

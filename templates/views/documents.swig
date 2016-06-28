@@ -4,7 +4,7 @@
 
 {% block intro %}
   <div class="container">
-    <h1>Documents</h1>
+    <h1 class="bar shadow-4">Documents</h1>
   </div>
 {% endblock %}
 

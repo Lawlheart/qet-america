@@ -4,7 +4,6 @@
 
 {% block title %}QET America | Blog {% endblock %}
 
-
 {% macro showPost(post) %}
 	<div class="post card" data-ks-editable="editable(user, { list: 'Post', id: post.id })">
 		<div class="titlebar">
@@ -54,40 +53,31 @@
 							{{ showPost(post) }}
 						{% endfor %}
 					</div>
+					
+					{# PAGINATION #}
 					{% if data.posts.totalPages > 1 %}
-						<ul class="pagination">
-							{% if data.posts.previous %}
-								<li>
-									<a href="?page={{ data.posts.previous }}">
-										<span class="glyphicon glyphicon-chevron-left"></span>
-									</a>
-								</li>
-							{% else %}
-								<li class="disabled">
-									<a href="?page=1">
-										<span class="glyphicon glyphicon-chevron-left"></span>
-									</a>
-								</li>
-															{% endif %}
-								{% for p in data.posts.pages %}
-									<li class="{% if data.posts.currentPage == p %}active{% endif %}">
-										<a href="?page={% if p == "..." %}{% if i %}{{ data.posts.totalPages }}{% else %}1{% endif %}{% else %}{{ p }}{% endif %}">{{ p }}</a>
-									</li>
-								{% endfor %}
-							{% if data.posts.next %}
-								<li>
-									<a href="?page={{ data.posts.next }}">
-										<span class="glyphicon glyphicon-chevron-right"></span>
-									</a>
-								</li>
-							{% else %}
-								<li class="disabled">
-									<a href="?page={{ data.posts.totalPages }}">
-										<span class="glyphicon glyphicon-chevron-right"></span>
-									</a>
-								</li>
-							{% endif %}
-						</ul>
+						<div class="pagination">
+							<ul>
+								{# Previous #}
+								{% if data.posts.previous %}
+									<li class="page-prev"><a href="?page={{ data.posts.previous }}">Prev</a></li>
+								{% else %}
+									<li class="disabled page-prev"><a href="?page=1">Prev</a></li>
+								{% endif %}
+									{# Numbered Pages #}
+									{% for p in data.posts.pages %}
+										<li class="{% if data.posts.currentPage == p %}active{% endif %}">
+											<a href="?page={% if p == "..." %}{% if i %}{{ data.posts.totalPages }}{% else %}1{% endif %}{% else %}{{ p }}{% endif %}">{{ p }}</a>
+										</li>
+									{% endfor %}
+								{# Next #}
+								{% if data.posts.next %}
+									<li class="page-next"><a href="?page={{ data.posts.next }}">Next</a></li>
+								{% else %}
+									<li class="disabled page-next"><a href="?page={{ data.posts.totalPages }}">Next</a></li>
+								{% endif %}
+							</ul>
+						</div>
 					{% endif %}
 				{% else %}
 					{% if data.category %}

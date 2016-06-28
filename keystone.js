@@ -52,7 +52,19 @@ keystone.init({
 	'cloudinary url' : process.env.CLOUDINARY_URL,
 	'language options': {
 		'supported languages': ['en', 'es']
-	}
+	},
+	// WYSIWYG Editor Settings
+	// 'wysiwyg override toolbar': true,
+	'wysiwyg menubar': true,
+	'wysiwyg cloudinary images': true,
+	// 'wysiwyg additional buttons': 'searchreplace visualchars,'
+	// + ' charmap ltr rtl pagebreak paste, forecolor backcolor,'
+	// +' emoticons media, preview print ',
+	'wysiwyg additional plugins': 'example, table, advlist, anchor,'
+	+ ' autolink, autosave, bbcode, charmap, contextmenu, '
+	+ ' directionality, emoticons, fullpage, hr, media, pagebreak,'
+	+ ' paste, preview, print, searchreplace, textcolor,'
+	+ ' visualblocks, visualchars, wordcount'
 
 });
 
@@ -131,7 +143,8 @@ keystone.set('email tests', require('./routes/emails'));
 // Configure the navigation bar in Keystone's Admin UI
 
 keystone.set('nav', {
-	'posts': ['posts', 'post-categories', 'news'],
+	'posts': ['posts', 'post-categories'],
+	'news': 'news',
 	'materials': ['documents', 'galleries'],
 	'enquiries': 'enquiries',
 	'pages': 'pages',

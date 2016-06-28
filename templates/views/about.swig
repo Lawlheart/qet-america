@@ -15,7 +15,7 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid autem blanditiis consectetur dignissimos distinctio dolorum ex explicabo, harum maxime nesciunt officiis optio quam sequi sint sunt, tenetur vel voluptatem.</p>
 		<a class="button cta pull-right" href="/donate">{{ t('Donate') }}</a>
 	</div>
-	<h1>Members</h1>
+	<h1 class="shadow-4 bar">Members</h1>
 	<div id="users">
 		{% for user in users %}
 			{% if user.isPublic %}

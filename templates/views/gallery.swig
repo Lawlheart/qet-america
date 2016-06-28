@@ -9,7 +9,7 @@
 
 {% block intro %}
 	<div class="container">
-		<h1>{{ t('Gallery') }}</h1>
+		<h1 class="bar shadow-4">{{ t('Gallery') }}</h1>
 	</div>
 {% endblock %}
 

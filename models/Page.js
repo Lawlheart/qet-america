@@ -32,7 +32,7 @@ Page.add({
 		type: Types.Html, wysiwyg: true, height: 400
 		// brief: { type: Types.Html, wysiwyg: true, height: 150 },
 		// extended: { type: Types.Html, wysiwyg: true, height: 400 }
-	},
+	}
 });
 
 // Page.schema.virtual('content.full').get(function() {

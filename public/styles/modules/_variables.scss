@@ -26,6 +26,7 @@ $red: #E51300;
 
 $action-color: $green;
 $base-font-color: #fff !default;
+$base-border-color: $dark-green;
 
 // Font Size
 $font-size-base: 14px;
@@ -81,3 +82,10 @@ $footer-link-color: transparentize($footer-color, 0.6);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
 
+// Pagination
+
+$pagination-border-color: $base-border-color;
+$pagination-border: 1px solid $pagination-border-color;
+$pagination-background: lighten($pagination-border-color, 10);
+$pagination-hover-background: lighten($pagination-background, 5);
+$pagination-color: $base-font-color;
