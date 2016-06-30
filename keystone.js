@@ -2,11 +2,6 @@
 // customising the .env file in your project's root folder.
 require('dotenv').config({ silent: true });
 
-// Initialise New Relic if an app name and license key exists
-if (process.env.NEW_RELIC_APP_NAME && process.env.NEW_RELIC_LICENSE_KEY) {
-	require('newrelic');
-}
-
 // Require language middleware and express to implement i18n
 // This should not be necessary after upgrading to keystone 0.4
 var language = require('./lib/language');
