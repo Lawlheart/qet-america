@@ -36,5 +36,9 @@ node_modules
 # IDE Files
 .idea/
 
-# Docker
-Dockerfile
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+QETAmerica.zip

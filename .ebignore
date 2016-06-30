@@ -1,0 +1,8 @@
+.env
+node_modules/
+.jshintrc
+gulpfile.js
+README.md
+.git/
+.idea/
+.editorconfig
