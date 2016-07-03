@@ -25,7 +25,7 @@ Backup.add({
 
 Backup.schema.pre('save', function(next) {
 	// sets the path to backup endpoint
-	this.url = '/backup';
+	this.url = '/backup.tar';
 	
 	if (this.file.filename) {
 		var self = this;
