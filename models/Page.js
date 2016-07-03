@@ -15,6 +15,7 @@ Page.add({
 	title: { type: String, required: true, note: 'Keep it short' },
 	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
 	// author: { type: Types.Relationship, ref: 'User', index: true },
+	showInNavBar: { type: Types.Boolean, label: 'Show in navigation bar' },
 	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
 
 	//create a dropdown with templates

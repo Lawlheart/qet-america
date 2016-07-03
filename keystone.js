@@ -156,7 +156,8 @@ var navLinks = [
 ];
 
 var updateNavigation = function() {
-	keystone.list('Page').model.find({state: 'published'}, function(err, pages) {
+	var filter = { state: 'published', showInNavBar: true };
+	keystone.list('Page').model.find(filter, function(err, pages) {
 		var newLinks = navLinks.slice();
 		pages.forEach(function(page) {
 			var exists = newLinks.some(function(el) {
