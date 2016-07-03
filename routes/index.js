@@ -52,6 +52,7 @@ exports = module.exports = function(app) {
 			else res.send("DELETED");
 		});
 	});
+	app.get('/backup', middleware.requireSuperUser, routes.views.backup);
 	// app.get('/:parent/:slug?', routes.views.page);
 	app.get('/:slug', routes.views.page);
 };
