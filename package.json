@@ -12,6 +12,7 @@
     "i18next-node-fs-backend": "^0.1.2",
     "keystone": "^0.3.17",
     "mongodb-backup": "^1.6.0",
+    "mongodb-restore": "^1.5.3",
     "newrelic": "^1.26.2",
     "node-sass": "^3.3.2",
     "node-sass-middleware": "^0.9.7",
