@@ -60,5 +60,5 @@ Page.schema.post('remove', function(next) {
 	keystone.get('updateNavigation')();
 });
 
-Page.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
+Page.defaultColumns = 'title, language|15%, state|15%, publishedDate|20%';
 Page.register();
