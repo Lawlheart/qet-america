@@ -18,7 +18,7 @@ var Backup = new keystone.List('Backup', {
 
 Backup.add({
 	name: { type: String, label: 'Name', index: true },
-	url: { type: Types.Url },
+	url: { type: Types.Url, noedit: true },
 	file: { type: Types.LocalFile, dest: '/tmp/qet/files', label: 'Restore' },
 	date: { type: Types.Datetime, default: Date.now, label: 'Date' }
 });
