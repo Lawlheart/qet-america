@@ -44,7 +44,7 @@
 					<h2>{{ article.title }}</h2>
 					<img src="{{ article.image.url }}" alt="">
 					<p>{{ article.content.brief | striptags | safe }}
-						<a href="javascript:void(0)" class="read-more">{{ t('Read More') }} <span>&rsaquo;</span></a>
+						<a href="javascript:void(0)" class="read-more">{{ t('Read more') }} <span>&rsaquo;</span></a>
 					</p>
 				</article>
 			{% endfor %}
