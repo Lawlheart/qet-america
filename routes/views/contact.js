@@ -1,5 +1,6 @@
 var keystone = require('keystone');
 var Enquiry = keystone.list('Enquiry');
+var i18next = require('i18next');
 
 exports = module.exports = function(req, res) {
 	
@@ -33,7 +34,10 @@ exports = module.exports = function(req, res) {
 		});
 		
 	});
-	
-	view.render('contact');
+	i18next.setDefaultNamespace('index');
+	i18next.loadNamespaces('index', function(err, t) {
+		view.render('contact');
+	});
+	// view.render('contact');
 	
 };
