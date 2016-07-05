@@ -24,5 +24,15 @@
   "on": "el",
   "Showing": "Mostrando",
   "Contact QET": "Contacta a QET",
-  "Donate to QET": "Hacer una donación"
+  "Donate to QET": "Hacer una donación",
+  "Name": "Nombre",
+  "Email": "Email",
+  "Phone": "Teléfono",
+  "(optional)": "(opcional)",
+  "What are you contacting us about?": "Motivo del contacto",
+  "(select one)": "(seleccione uno)",
+  "Just leaving a message": "Solo dejar un mensaje",
+  "I've got a question": "Tengo una pregunta",
+  "Message": "Mensaje",
+  "Leave us a message": "Déjanos un mensaje"
 }

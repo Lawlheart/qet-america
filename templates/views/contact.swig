@@ -23,7 +23,7 @@
 						{% endif %}
 						<div class="form-group {{ className }}">
 							<label>
-								<span>Name</span>
+								<span>{{ t('Name') }}</span>
 								<input type="text" name="name.full" value="{{ formData['name.full'] | default('') }}" class="form-control">
 							</label>
 						</div>
@@ -33,14 +33,14 @@
 						{% endif %}
 						<div class="form-group {{ className }}">
 							<label>
-								<span>Email</span>
+								<span>{{ t('Email') }}</span>
 								<input type="email" name="email" value="{{ formData.email | default('') }}" class="form-control">
 							</label>
 						</div>
 						<div class="form-group">
 							<label>
-								<span>Phone</span>
-								<input type="text" name="phone" value="{{ formData.phone | default('') }}" placeholder="(optional)" class="form-control">
+								<span>{{ t('Phone') }}</span>
+								<input type="text" name="phone" value="{{ formData.phone | default('') }}" placeholder="{{ t('(optional)') }}" class="form-control">
 							</label>
 						</div>
 						{% set className = "" %}
@@ -49,15 +49,15 @@
 						{% endif %}
 						<div class="form-group {{ className }}">
 							<label>
-								<span>What are you contacting us about?</span>
+								<span>{{ t('What are you contacting us about?') }}</span>
 								<select name="enquiryType" class="form-control">
-									<option value="">(select one)</option>
+									<option value="">{{ t('(select one)') }}</option>
 									{% for type in enquiryTypes %}
 										{% set selected = "" %}
 										{% if formData.enquiryType === type.value %}
 											{% set selected = " selected" %}
 										{% endif %}
-										<option value="{{ type.value }}"{{ selected }}>{{ type.label }}</option>
+										<option value="{{ type.value }}"{{ selected }}>{{ t(type.label) }}</option>
 									{% endfor %}
 								</select>
 						</div>
@@ -67,8 +67,8 @@
 						{% endif %}
 						<div class="form-group {{ className }}">
 							<label>
-								<span>Message</span>
-								<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">
+								<span>{{ t('Message') }}</span>
+								<textarea name="message" placeholder="{{ t('Leave us a message') }}..." rows="4" class="form-control">
 									{{ formData.message }}
 								</textarea>
 							</label>
