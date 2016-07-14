@@ -1,7 +1,7 @@
 var keystone = require('keystone');
 
 var i18next = require('i18next');
-var path = require('path');
+
 var News = keystone.list('News');
 
 exports = module.exports = function(req, res) {
