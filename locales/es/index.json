@@ -10,7 +10,7 @@
   "Home": "Inicio",
   "Gallery": "Galería",
   "Follow Us": "Síganos",
-  "Sign In": "Registrarse",
+  "Sign In": "Entrar",
   "Open Keystone": "Abrir Keystone",
   "Sign Out": "Desconectar",
   "Language": "Idioma",
@@ -35,5 +35,6 @@
   "I've got a question": "Tengo una pregunta",
   "Something else": "Algo más",
   "Message": "Mensaje",
-  "Leave us a message": "Déjanos un mensaje"
+  "Leave us a message": "Déjanos un mensaje",
+  "Open": "Abrir"
 }
