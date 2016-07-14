@@ -9,10 +9,22 @@ exports = module.exports = function(req, res) {
 
   // Set locals
   locals.section = 'documents';
-	
-	view.query('documents', keystone.list('Document').model.find());
-  
-  i18next.setDefaultNamespace('index');
+
+	// Load the posts
+	view.on('init', function(next) {
+		var q = keystone.list('Document').paginate({
+				page: req.query.page || 1,
+				perPage: 9,
+				maxPages: 10
+			});
+
+		q.exec(function(err, results) {
+			locals.documents = results;
+			next(err);
+		});
+	});
+
+	i18next.setDefaultNamespace('index');
 	i18next.loadNamespaces('index', function(err, t) {
 		view.render('documents');
 	});
