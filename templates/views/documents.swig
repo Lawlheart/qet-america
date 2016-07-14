@@ -4,7 +4,7 @@
 
 {% block intro %}
   <div class="container">
-    <h1 class="bar shadow-4">Documents</h1>
+    <h1 class="bar shadow-4">t('Documents')</h1>
   </div>
 {% endblock %}
 
@@ -19,7 +19,8 @@
 				<div class="document-container" id='print'>
 					<iframe src="https://docs.google.com/viewer?url=https:{{ doc.document.url }}&embedded=true" width="100%" height="100%" style="border: none;"></iframe>
 				</div>
-				<a class="document-open button" href="{{ doc.document.url }}" target="_blank">Open</a>
+				<a href="{{ doc.document.url }}" class="document-open button" target="_blank">t('Open')</a>
+				<a href="{{ doc.document.url }}" class="button document-download" download>t('Download')</a>
 			</li>
 		{% endfor %}
 	</ul>
