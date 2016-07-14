@@ -12,7 +12,7 @@
 	<div class="container">
 		{% if documents.results.length %}
 			{% if documents.totalPages > 1 %}
-				<h4 class="text-weight-normal showing">{{ t('Showing') }} 
+				<h4>{{ t('Showing') }} 
 					<strong>{{ documents.first }}</strong>
 					{{ t('to') }}
 					<strong>{{ documents.last }}</strong>
