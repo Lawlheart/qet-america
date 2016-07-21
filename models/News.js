@@ -27,5 +27,16 @@ News.schema.virtual('content.full').get(function() {
 	return this.content.extended || this.content.brief;
 });
 
+News.schema.methods.isPublished = function() {
+	return this.state == 'published';
+};
+
+News.schema.pre('save', function(next) {
+	if (this.isPublished() && !this.publishedDate) {
+		this.publishedDate = new Date();
+	}
+	next();
+});
+
 News.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
 News.register();

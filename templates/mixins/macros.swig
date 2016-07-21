@@ -6,7 +6,7 @@
   {% endif %}
 
   {% if post.categories and post.categories.length %}
-    {{ 'in' }}
+    {{ t('in') }}
     {% for cat in post.categories %}
       <a href="/blog/{{ cat.key }}">{{ cat.name }}</a>
       {% if loop.index < post.categories.length - 1 %}, {% endif %}
@@ -15,7 +15,7 @@
 
   {# Author, if it exists #}
   {% if post.author %}
-    {{ 'by' }} {{ post.author.name.first }}
+    {{ t('by') }} {{ post.author.name.first }}
   {% endif %}
 {% endmacro %}
 

@@ -55,9 +55,9 @@
 						{% endfor %}
 						{# Next #}
 						{% if documents.next %}
-							<li class="page-next"><a href="?page={{ documents.next }}">Next</a></li>
+							<li class="page-next"><a href="?page={{ documents.next }}">{{ t('Next') }}</a></li>
 						{% else %}
-							<li class="disabled page-next"><a href="?page={{ documents.totalPages }}">Next</a></li>
+							<li class="disabled page-next"><a href="?page={{ documents.totalPages }}">{{ t('Next') }}</a></li>
 						{% endif %}
 					</ul>
 				</div>
