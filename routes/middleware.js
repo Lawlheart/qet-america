@@ -14,6 +14,8 @@ var i18next = require('i18next');
 var Backend = require('i18next-node-fs-backend');
 var path = require('path');
 var keystone = require('keystone');
+var moment = require("moment");
+
 
 
 
@@ -87,6 +89,9 @@ exports.requireSuperUser = function(req, res, next) {
 
 // Adds static multilanguage feature
 exports.i18n = function (req, res, next) {
+	// sets the correct locale for dates
+	moment.locale(req.language);
+
 	var baseDir = path.resolve('./locales');
 	i18next
 	.use(Backend)

@@ -2,7 +2,7 @@
 {# Posted (on DATE) (in CATEGORIES) (by AUTHOR) #}
   {{ t('Posted') }}
   {% if post.publishedDate %}
-    {{ t('on') }} {{ post._.publishedDate.format("MMMM Do, YYYY") }}
+    {{ t('on') }} {{ post._.publishedDate.format("LL") }}
   {% endif %}
 
   {% if post.categories and post.categories.length %}

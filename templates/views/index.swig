@@ -40,7 +40,7 @@
 			</div>
 			{% for article in news %}
 				<article class="type-system-rounded">
-					<p class="date">{{ article.publishedDate | date('d M Y') }}</p>
+					<p class="date">{{ article._.publishedDate.format("D MMM YYYY") }}</p>
 					<h2>{{ article.title }}</h2>
 					<img src="{{ article.image.url }}" alt="">
 					<p>{{ article.content.brief | striptags | safe }}
