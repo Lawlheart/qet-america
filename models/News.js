@@ -32,11 +32,8 @@ News.schema.methods.isPublished = function() {
 };
 
 News.schema.pre('save', function(next) {
-	console.log('isP?', this.isPublished());
-	console.log('pre date', this.publishedDate);
 	if (this.isPublished() && !this.publishedDate) {
 		this.publishedDate = new Date();
-		console.log('date', this.publishedDate);
 	}
 	next();
 });
