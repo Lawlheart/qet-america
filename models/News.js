@@ -17,7 +17,9 @@ News.add({
 		{ value: 'en', label: 'English' },
 		{ value: 'es', label: 'Español' }
 	], default: 'en' },
-	content: { type: Types.Html, wysiwyg: true, height: 400 }
+	content: {
+		brief: { type: Types.Html, wysiwyg: true, height: 150 }
+	}
 });
 
 News.schema.virtual('content.full').get(function() {
