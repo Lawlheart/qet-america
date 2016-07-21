@@ -14,7 +14,13 @@ exports = module.exports = function(req, res) {
 		// item in the header navigation.
 		locals.section = 'home';
 
-		News.model.find().sort('-publishedDate').exec(function(err, news) {
+		News.model.find({
+			'state': 'published',
+			'language': req.language
+		})
+		.limit(5)
+		.sort('-publishedDate')
+		.exec(function(err, news) {
 			locals.news = news;
 			view.render('index');
 		});
