@@ -14,7 +14,7 @@ var Document = new keystone.List('Document', {
 
 Document.add({
 	title: { type: String, required: true },
-	document: { type: Types.S3File, label: 'File' }
+	document: { type: Types.S3File, label: 'File', allowedTypes: ['application/pdf'] }
 });
 
 Document.register();
