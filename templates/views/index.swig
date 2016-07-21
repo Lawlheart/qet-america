@@ -43,7 +43,7 @@
 					<p class="date">{{ article._.publishedDate.format("D MMM YYYY") }}</p>
 					<h2>{{ article.title }}</h2>
 					<img src="{{ article.image.url }}" alt="">
-					<p>{{ article.content.brief | striptags | safe }}
+					<p>{{ article.content | striptags | safe }}
 						{#<a href="javascript:void(0)" class="read-more">{{ t('Read more') }} <span>&rsaquo;</span></a>#}
 					</p>
 				</article>
