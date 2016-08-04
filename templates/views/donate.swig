@@ -9,7 +9,7 @@
 		</div>
 		<div id="donate">
 			<script src="https://www.dntly.com/assets/js/v1/form.js" 
-					data-donately-id="act_3e1c6fc40d30" 
+					data-donately-id="act_72f5be74243e" 
 					data-donately-css-url="http://dev.lawlietblack.com/css/form-dark.css"
 					data-donately-embed-css="true"
 			></script>
