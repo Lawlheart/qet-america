@@ -24,3 +24,10 @@
 	margin: 0;
   }
 }
+
+.document-container {
+  position: relative;
+  .showing {
+	top: -26px;
+  }
+}

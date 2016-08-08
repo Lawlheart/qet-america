@@ -878,6 +878,11 @@ article .video-frame {
   #documents h4 {
     margin: 0; }
 
+.document-container {
+  position: relative; }
+  .document-container .showing {
+    top: -26px; }
+
 #enquiries .card {
   overflow: auto;
   position: relative; }
@@ -969,7 +974,8 @@ article .video-frame {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 31.76157%;
+  min-height: 300px; }
   .card.user:last-child {
     margin-right: 0; }
   .card.user img.avatar {

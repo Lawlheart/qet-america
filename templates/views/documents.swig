@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-	<div class="container">
+	<div class="container document-container">
 		{% if documents.results.length %}
 			{% if documents.totalPages > 1 %}
 				<h4>{{ t('Showing') }} 
