@@ -35,5 +35,19 @@
   "Open": "Open",
   "Donate to QET": "Donate to QET",
   "documents": "documents",
-  "Next": "Next"
+  "Next": "Next",
+  "Contact QET": "Contact QET",
+  "Name": "Name",
+  "Email": "Email",
+  "Phone": "Phone",
+  "(optional)": "(optional)",
+  "What are you contacting us about?": "What are you contacting us about?",
+  "(select one)": "(select one)",
+  "Just leaving a message": "Just leaving a message",
+  "I've got a question": "I've got a question",
+  "Something else": "Something else",
+  "Message": "Message",
+  "Leave us a message": "Leave us a message",
+  "by": "by",
+  "in": "in"
 }

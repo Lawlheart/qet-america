@@ -1,13 +1,17 @@
 #mainpage {
   @include outer-container;
-
-  .half { 
-	@include span-columns(6);
+  #aboutus {
+	@include span-columns(8);
+  }
+  #newsfeed { 
+	@include span-columns(4);
+	min-height: 800px;
   }
   @media screen and (max-width: $large-screen) {
-	.half { 
+	#aboutus, #newsfeed { 
 	  @include span-columns(12); 
 	  margin-bottom: 20px;
+	  min-height: 100px;
 	}
   }
 }

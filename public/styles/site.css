@@ -589,21 +589,30 @@ select {
     clear: both;
     content: "";
     display: table; }
-  #mainpage .half {
+  #mainpage #aboutus {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%; }
-    #mainpage .half:last-child {
+    width: 65.88078%; }
+    #mainpage #aboutus:last-child {
+      margin-right: 0; }
+  #mainpage #newsfeed {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    min-height: 800px; }
+    #mainpage #newsfeed:last-child {
       margin-right: 0; }
   @media screen and (max-width: 53.75em) {
-    #mainpage .half {
+    #mainpage #aboutus, #mainpage #newsfeed {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%;
-      margin-bottom: 20px; }
-      #mainpage .half:last-child {
+      margin-bottom: 20px;
+      min-height: 100px; }
+      #mainpage #aboutus:last-child, #mainpage #newsfeed:last-child {
         margin-right: 0; } }
 
 #aboutus h2 {
